@@ -5,6 +5,7 @@ import {Badge, Button, Col, Figure, ListGroup, Row} from "react-bootstrap";
 import saving from "../../assets/img/web/saving.png";
 import ataboy from "../../assets/img/web/ataboy.png";
 import ecsms from "../../assets/img/web/ecsmc.png";
+import movi from "../../assets/img/web/movigam.png";
 import {Link} from "react-router-dom";
 
 const Jumbotron = styled.div`
@@ -49,7 +50,15 @@ const data = [
         img: ecsms,
         tools: ["Codeigniter", "Bootstrap", "jQuery"],
         link: "http://ecsms.sikembang.com/"
-    }
+    },
+    {
+        title: "movigam",
+        description: "movigam is an application that provides movie and game information. this project is the final project of the react js bootcamp from sanberode.",
+        date: "Dec 2021",
+        img: movi,
+        tools: ["React JS", "ANT Design"],
+        link: "https://movigam.netlify.app"
+    },
 ];
 
 const Web = () => {
@@ -85,7 +94,7 @@ const Web = () => {
                                                     </Col>
                                                     <Col md={8}>
                                                         <h1>{item.title}</h1>
-                                                        <i style={{fontSize: '12px'}}>{item.date} </i>
+                                                        <b style={{fontSize: '12px'}}>{item.date} </b>
                                                         {
                                                             item.tools.map(tool => {
                                                                 return (
