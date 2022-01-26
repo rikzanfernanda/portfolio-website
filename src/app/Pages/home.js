@@ -2,10 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import BG from "../../assets/img/bg-jumbotron.jpg"
 import Profile from "../../assets/img/resmi_1.jpg";
-import {Button, Card, Col, ListGroup, Row} from "react-bootstrap";
+import {Col, ListGroup, Row} from "react-bootstrap";
 import BG_portfolios from "../../assets/img/ui/liquid-cheese.svg";
-import Web from "../../assets/img/portfolio/web-donasi.jpg";
-import GD from "../../assets/img/portfolio/eidaladha_character8.jpg";
 import {Link} from "react-router-dom";
 
 const Jumbotron = styled.div`
@@ -50,6 +48,9 @@ const CV = styled.div`
         height: 700px;
         overflow: auto;
     }
+    .cv-content i{
+        font-size: 26px;
+    }
     
     @media only screen and (min-width: 576px){
         .cv-card{
@@ -67,9 +68,57 @@ const Portfolios = styled.div`
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px;
+    padding: 50px 20px;
     color: white;
 `;
+
+let certificates = [
+    {
+        name: "Architecting on AWS (Membangun Arsitektur Cloud di AWS)",
+        company: "Dicoding Indonesia",
+        date: "December 2021"
+    },
+    {
+        name: "CLoud Practicioner Essentials",
+        company: "Dicoding Indonesia",
+        date: "August 2021"
+    },
+    {
+        name: "React JS Web Frontend",
+        company: "Sanbercode",
+        date: "December 2021"
+    },
+    {
+        name: "PHP & MySQL - Certification Course for Beginners",
+        company: "Udemy",
+        date: "April 2021"
+    },
+    {
+        name: "MySQL Database Development Mastery",
+        company: "Udemy",
+        date: "April 2021"
+    },
+    {
+        name: "Membangun Toko Online Menggunakan Laravel, Vue js, dan Payment Gateway",
+        company: "Santrikoding",
+        date: "Juli 2021"
+    },
+    {
+        name: "Wordpress CMS",
+        company: "Sanbercode",
+        date: "September 2020"
+    },
+    {
+        name: "Pengurus DNCC Periode 2020/2021",
+        company: "DNCC",
+        date: "September 2020 - September 2021"
+    },
+    {
+        name: "Scrum Fundamentals Certified",
+        company: "SCRUM Study",
+        date: "January 2022"
+    }
+];
 
 const Home = () => {
     return (
@@ -88,6 +137,16 @@ const Home = () => {
                         <Row>
                             <Col md={4} className="mb-4">
                                 <img src={Profile} className="img-fluid"/>
+                                <div className="text-center mt-5">
+                                    <a href="https://github.com/rikzanfernanda" target="_blank"
+                                       className="text-dark me-3"><i className="fab fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/rikzan-fernanda-9097831ab/" target="_blank"
+                                       className="text-dark me-3"><i className="fab fa-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/rikzanfernanda/" target="_blank"
+                                       className="text-dark me-3"><i className="fab fa-instagram"></i></a>
+                                    <a href="https://web.facebook.com/rikzan.fernanda" target="_blank"
+                                       className="text-dark me-3"><i className="fab fa-facebook"></i></a>
+                                </div>
                             </Col>
                             <Col md={8}>
                                 <div className="mb-4">
@@ -123,7 +182,7 @@ const Home = () => {
                                     </Row>
                                 </div>
 
-                                <div className="">
+                                <div className="mb-4">
                                     <h4>Skills</h4>
                                     <Row>
                                         <Col>
@@ -150,7 +209,31 @@ const Home = () => {
                                                 <li>Adobe Illustrator</li>
                                             </ul>
                                         </Col>
+                                        <Col>
+                                            <ul>
+                                                <li>Git</li>
+                                            </ul>
+                                        </Col>
                                     </Row>
+                                </div>
+
+                                <div>
+                                    <h4>Certificates</h4>
+                                    <ListGroup variant="flush">
+                                        {
+                                            certificates.map((item) => {
+                                                return (
+                                                    <>
+                                                        <ListGroup.Item>
+                                                            <h6>{item.name}</h6>
+                                                            <small
+                                                                className="text-primary">{item.company}</small><small>, {item.date}</small>
+                                                        </ListGroup.Item>
+                                                    </>
+                                                )
+                                            })
+                                        }
+                                    </ListGroup>
                                 </div>
                             </Col>
                         </Row>
@@ -161,8 +244,8 @@ const Home = () => {
             <Portfolios>
                 <h1 className="text-center text-white mb-4">Portfolios</h1>
                 <Row>
-                    <Col className="p-md-5">
-                        <h1>Web Development</h1>
+                    <Col md={6} className="p-md-5 pb-5">
+                        <h2>Web Development</h2>
                         <p>
                             I am skilled at creating php/mySQL, javascript/jQuery, web sites/applications. I
                             have made several applications, some using CodeIgniter 3 and others using laravel 8.
@@ -170,8 +253,8 @@ const Home = () => {
                         </p>
                         <Link to="/web" className="btn btn-primary">View Portfolios</Link>
                     </Col>
-                    <Col className="p-md-5">
-                        <h1>Graphic Design and Photo Editing</h1>
+                    <Col md={6} className="p-md-5">
+                        <h2>Graphic Design and Photo Editing</h2>
                         <p>
                             The tools I use are Adobe Illustrator and Photoshop. I have more than 3 years
                             experience in graphic design. Making a quality design requires several
@@ -190,7 +273,7 @@ const Home = () => {
                     <Col md={8}>
                         <iframe className="mb-4"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3388.3920975409656!2d109.52659184952269!3d-6.9073190209047555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fd8e232c31673%3A0x6bd0fa0c8b35fe30!2sGg.%20Ontorejo%2C%20Pesadangan%2C%20Ujunggede%2C%20Kec.%20Ampelgading%2C%20Kabupaten%20Pemalang%2C%20Jawa%20Tengah%2052364!5e1!3m2!1sid!2sid!4v1632839621353!5m2!1sid!2sid"
-                                 allowFullScreen="" loading="lazy" style={{width: '100%', height: '400px'}}></iframe>
+                                allowFullScreen="" loading="lazy" style={{width: '100%', height: '400px'}}></iframe>
                     </Col>
                     <Col md={4}>
                         <ListGroup>

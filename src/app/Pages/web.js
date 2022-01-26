@@ -90,7 +90,7 @@ const Web = () => {
                                                             item.tools.map(tool => {
                                                                 return (
                                                                     <Badge bg="primary"
-                                                                           style={{marginRight: '4px'}}>{tool}</Badge>
+                                                                           style={{marginRight: '4px', fontSize: '8px'}}>{tool}</Badge>
                                                                 )
                                                             })
                                                         }
