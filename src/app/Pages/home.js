@@ -74,6 +74,11 @@ const Portfolios = styled.div`
 
 let certificates = [
     {
+        name: "Agile Development using Scrum Framework (Basic)",
+        company: "Sanbercode",
+        date: "January 2022"
+    },
+    {
         name: "Architecting on AWS (Membangun Arsitektur Cloud di AWS)",
         company: "Dicoding Indonesia",
         date: "December 2021"
