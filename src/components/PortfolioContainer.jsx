@@ -4,7 +4,7 @@ import webPortfolios from "../constants/web-portfolios";
 import PortfolioCard from "./PortfolioCard";
 
 const PortfolioContainer = () => {
-    return <Box w={['full', 'full', '60%']} ml={[null, null, '5%']} py={[10, 40]} px={[2, 0]}>
+    return <Box w={['full', 'full', '60%']} ml={[null, null, '5%']} py={[10, 40]} px={[3, 0]}>
         <Heading fontSize={['md', '4xl']} mb={[4, 10]} color={'white'}>
             Portfolio
         </Heading>

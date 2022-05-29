@@ -5,7 +5,7 @@ import PortfolioToolItem from "./PortfolioToolItem";
 const PortfolioEditingItem = ({item}) => {
     return <>
         <Box>
-            <Image src={item.image} alt={'portfolio'} rounded={'xl'} w={'full'} h={['100px', '160px']} objectFit={'cover'} />
+            <Image src={item.image} alt={'portfolio'} rounded={'xl'} w={'full'} h={['130px', '180px']} objectFit={'cover'} />
             <Box pt={[1]} pb={[2]}>
                 <Text fontSize={['.6rem', 'sm']}>
                     {item.description}

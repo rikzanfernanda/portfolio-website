@@ -6,7 +6,7 @@ const LinkListItem = ({link}) => {
     return <>
         {
             link !== '' &&
-            <ListItem fontSize={['.65rem', 'md']}>
+            <ListItem fontSize={['xs', 'md']}>
                 <Link href={link} isExternal color={'blue.500'}>
                 {link} <ExternalLinkIcon mx='2px'/>
             </Link>

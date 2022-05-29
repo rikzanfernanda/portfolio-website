@@ -7,7 +7,7 @@ const PortfoliosHome = ({portfolio, link}) => {
         <Heading fontSize={['sm', 'xl']} mb={[1,2]}>
             {portfolio.title}
         </Heading>
-        <Text fontSize={['.6rem', 'md']} mb={[2,4]}>
+        <Text fontSize={['xs', 'md']} mb={[2,4]}>
             {portfolio.description}
         </Text>
         <Link to={link}>

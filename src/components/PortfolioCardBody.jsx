@@ -6,11 +6,11 @@ import LinkListItem from "./LinkListItem";
 
 const PortfolioCardBody = ({description, sourceCode, link, tools, tasks}) => {
     return <Box px={[2, 4]} py={[2, 3]}>
-        <Text fontSize={['.65rem', 'md']}>
+        <Text fontSize={['xs', 'md']}>
             {description}
         </Text>
         <Box my={[1]}>
-            <Heading fontSize={['.65rem', 'md']}>
+            <Heading fontSize={['xs', 'md']}>
                 Contributions:
             </Heading>
             <List>

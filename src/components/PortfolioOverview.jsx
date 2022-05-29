@@ -12,20 +12,19 @@ const PortfolioOverview = ({text}) => {
         <Text fontSize={['.6rem', 'xs', 'sm']} mb={[1, 2]}>
             {text.note}
         </Text>
-        <Text fontSize={['.65rem', 'md']} textAlign={'left'}>
+        <Text fontSize={['xs', 'md']} textAlign={'left'}>
             {text.summary}
         </Text>
         <Box textAlign={'left'} mt={[2, 4]}>
-            <Link href={text.links.linkedin} isExternal fontSize={['.65rem', 'md']}>
+            <Link href={text.links.linkedin} isExternal fontSize={['xs', 'md']}>
                 LinkedIn <ExternalLinkIcon mx='2px'/>
             </Link> <br/>
-            <Link href={text.links.github} isExternal fontSize={['.65rem', 'md']}>
+            <Link href={text.links.github} isExternal fontSize={['xs', 'md']}>
                 Github <ExternalLinkIcon mx='2px'/>
             </Link>
         </Box>
-        {/*back to home*/}
         <RouteLink to={'/'}>
-            <Button colorScheme='blue' variant='link' fontSize={['.65rem', 'md']}>
+            <Button colorScheme='blue' variant='link' fontSize={['xs', 'md']}>
                 Home
             </Button>
         </RouteLink>

@@ -4,7 +4,7 @@ import portfolios from "../constants/portfolios";
 import PortfoliosHome from "./PortfoliosHome";
 
 const Porfolios = () => {
-    return <Box bgColor={'gray.800'} py={[10, 40]} px={[4, 20]} color={'white'}>
+    return <Box bgColor={'gray.800'} py={[10, 40]} px={[3, 20]} color={'white'}>
         <Heading size={['md', '2xl']} textAlign={'center'} mb={[4, 20]}>
             Portfolio
         </Heading>
