@@ -1,5 +1,5 @@
 import React from "react";
-import {Box, Heading, Link, List, ListItem, OrderedList, Text} from "@chakra-ui/react";
+import {Box, Heading, Link, List, ListItem} from "@chakra-ui/react";
 import about from "../constants/about";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
 

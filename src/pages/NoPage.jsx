@@ -6,7 +6,7 @@ const NoPage = () => {
 
     useEffect(() => {
         navigate('/', {replace: true});
-    }, [])
+    }, [navigate])
     return <></>
 }
 

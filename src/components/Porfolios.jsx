@@ -1,5 +1,5 @@
 import React from "react";
-import {Box, Button, Flex, Heading, Link, SimpleGrid, Text} from "@chakra-ui/react";
+import {Box, Heading, SimpleGrid} from "@chakra-ui/react";
 import portfolios from "../constants/portfolios";
 import PortfoliosHome from "./PortfoliosHome";
 
