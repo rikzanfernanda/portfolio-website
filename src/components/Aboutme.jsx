@@ -6,7 +6,7 @@ const Aboutme = ({about}) => {
         <Heading size={['sm', 'lg']} mb={[0,2]}>
             {about.name}
         </Heading>
-        <Text as={'em'} fontSize={['.65rem', 'md']}>
+        <Text fontSize={['.65rem', 'md']}>
             {about.note}
         </Text>
         <Divider my={2}/>
