@@ -4,7 +4,7 @@ import about from "../constants/about";
 import {ExternalLinkIcon} from "@chakra-ui/icons";
 
 const MoreAbout = () => {
-    return <Box py={[10, 40]} px={[3, 20]} textAlign={'right'}>
+    return <Box py={[20, 40]} px={[3, 20]} textAlign={'right'}>
         <Heading size={['md', '4xl']} mb={[4, 10]}>
             More About Me
         </Heading>
