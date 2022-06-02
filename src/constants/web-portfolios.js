@@ -2,7 +2,6 @@
 // {
 //     title: '',
 //         description: '',
-//     image: '',
 //     date: {
 //     start: '',
 //         end: ''
@@ -18,6 +17,32 @@
 // }
 
 const webPortfolios = [
+    {
+        title: 'Aruskas Rest API',
+        description: 'Creating Rest API for Aruskas application using Laravel lumen 8, testable and documented.',
+        date: {
+            start: 'Feb 2022',
+            end: 'Present'
+        },
+        sourceCode: 'https://gitlab.com/rikzanfernanda/aruskas-backend',
+        link: 'https://rikzanfernanda.github.io/aruskas-api-docs/',
+        tools: [
+            "Lumen 8",
+            "PHP",
+            "MySQL",
+            "JWT",
+            "OpenAPI",
+            "Swagger",
+            "Unit Testing"
+        ],
+        tasks: [
+            "Create API documentation",
+            "Create API unit testing",
+            "Create API integration testing",
+            "Create Rest API",
+            "Deploy API"
+        ]
+    },
     {
         title: 'Instagram Clone',
         description: 'Instagram Clone is app that implementation some features like instagram. The features include login with github account, view all posts on the home page, can do like and dislike posts, users can upload photos and captions, users can view their own profiles or other users and their posts',
