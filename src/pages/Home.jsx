@@ -7,7 +7,7 @@ import Porfolios from '../components/Porfolios'
 const Home = () => {
     return (
         <>
-            <HomeTop />
+            {/* <HomeTop /> */}
             <Education />
             <MoreAbout />
             <Porfolios />
