@@ -1,13 +1,13 @@
 import React from 'react'
-import HomeTop from '../components/HomeTop'
 import Education from '../components/Education'
 import MoreAbout from '../components/MoreAbout'
 import Porfolios from '../components/Porfolios'
+import Hero from '../components/Hero'
 
 const Home = () => {
     return (
         <>
-            {/* <HomeTop /> */}
+            <Hero />
             <Education />
             <MoreAbout />
             <Porfolios />
