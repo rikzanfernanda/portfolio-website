@@ -15,6 +15,11 @@ const Wrapper = ({ children }) => {
     return children
 }
 
+const LinkToProjects = () => {
+    window.location.href = 'https://www.linkedin.com/in/rikzan-fernanda-9097831ab/details/projects/'
+    return null
+}
+
 function App() {
     return (
         <>
@@ -27,6 +32,7 @@ function App() {
                             <Route path="/editing" element={<Editing />} />
                             <Route path="*" element={<NoPage />} />
                         </Route>
+                        <Route path="/projects" element={<LinkToProjects />} />
                     </Routes>
                 </Wrapper>
             </BrowserRouter>
