@@ -5,6 +5,7 @@ import NoPage from './pages/NoPage'
 import Web from './pages/Web'
 import Editing from './pages/Editing'
 import { useLayoutEffect } from 'react'
+import Layout from './layouts'
 
 const Wrapper = ({ children }) => {
     const location = useLocation()
@@ -20,10 +21,12 @@ function App() {
             <BrowserRouter>
                 <Wrapper>
                     <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/web" element={<Web />} />
-                        <Route path="/editing" element={<Editing />} />
-                        <Route path="*" element={<NoPage />} />
+                        <Route element={<Layout />}>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/web" element={<Web />} />
+                            <Route path="/editing" element={<Editing />} />
+                            <Route path="*" element={<NoPage />} />
+                        </Route>
                     </Routes>
                 </Wrapper>
             </BrowserRouter>
