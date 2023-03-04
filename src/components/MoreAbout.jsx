@@ -1,43 +1,133 @@
 import React from 'react'
-import { Box, Heading, Link, List, ListItem } from '@chakra-ui/react'
+import { Box, Heading, Icon, Link, List, ListItem } from '@chakra-ui/react'
 import about from '../constants/about'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
+import { BsLinkedin, BsGithub, BsInstagram } from 'react-icons/bs'
 
 const MoreAbout = () => {
     return (
-        <Box py={[20, 40]} px={[3, 20]} textAlign={'right'}>
-            <Heading size={['md', '4xl']} mb={[4, 10]}>
+        <Box py={[20, 40]} px={[3, 20]}>
+            <Heading
+                size={{
+                    base: 'xl'
+                }}
+                mb={[6, 10]}
+                textAlign={'center'}
+            >
                 More About Me
             </Heading>
-            <List>
-                <ListItem>
+
+            <Box
+                display={'flex'}
+                justifyContent={'center'}
+                alignItems={'flex-start'}
+                gap={[4, 10]}
+            >
+                <Box
+                    display={'flex'}
+                    flexDirection={'column'}
+                    gap={{
+                        base: 2
+                    }}
+                    justifyContent={'center'}
+                    alignItems={'center'}
+                    backgroundColor={'gray.100'}
+                    p={{
+                        base: 4,
+                        md: 8
+                    }}
+                    borderRadius={'xl'}
+                >
+                    <Icon as={BsLinkedin}
+                        boxSize={{
+                            base: 10,
+                            md: '8rem',
+                            lg: '12rem'
+                        }}
+                    />
                     <Link
                         href={about.links.linkedin}
                         isExternal
-                        fontSize={['xl', '4rem']}
+                        fontSize={{
+                            base: 'md',
+                            md: '2.5rem',
+                            lg: '4rem'
+                        }}
                     >
-                        LinkedIn <ExternalLinkIcon ml="2px" />
+                        LinkedIn
                     </Link>
-                </ListItem>
-                <ListItem>
+                </Box>
+
+                <Box
+                    display={'flex'}
+                    flexDirection={'column'}
+                    gap={{
+                        base: 2
+                    }}
+                    justifyContent={'center'}
+                    alignItems={'center'}
+                    backgroundColor={'gray.100'}
+                    p={{
+                        base: 4,
+                        md: 8
+                    }}
+                    borderRadius={'xl'}
+                >
+                    <Icon as={BsGithub}
+                        boxSize={{
+                            base: 10,
+                            md: '8rem',
+                            lg: '12rem'
+                        }}
+                    />
                     <Link
                         href={about.links.github}
                         isExternal
-                        fontSize={['xl', '4rem']}
+                        fontSize={{
+                            base: 'md',
+                            md: '2.5rem',
+                            lg: '4rem'
+                        }}
                     >
-                        Github <ExternalLinkIcon ml="2px" />
+                        Github
                     </Link>
-                </ListItem>
-                <ListItem>
+                </Box>
+
+                <Box
+                    display={'flex'}
+                    flexDirection={'column'}
+                    gap={{
+                        base: 2
+                    }}
+                    justifyContent={'center'}
+                    alignItems={'center'}
+                    backgroundColor={'gray.100'}
+                    p={{
+                        base: 4,
+                        md: 8
+                    }}
+                    borderRadius={'xl'}
+                >
+                    <Icon as={BsInstagram}
+                        boxSize={{
+                            base: 10,
+                            md: '8rem',
+                            lg: '12rem'
+                        }}
+                    />
                     <Link
                         href={about.links.instagram}
                         isExternal
-                        fontSize={['xl', '4rem']}
+                        fontSize={{
+                            base: 'md',
+                            md: '2.5rem',
+                            lg: '4rem'
+                        }}
                     >
-                        Instagram <ExternalLinkIcon ml="2px" />
+                        Instagram
                     </Link>
-                </ListItem>
-            </List>
+                </Box>
+            </Box>
         </Box>
     )
 }
