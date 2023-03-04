@@ -11,7 +11,7 @@ const Hero = () => {
             p={{
                 base: 6,
                 md: 10,
-                lg: 32,
+                lg: '10rem',
             }}
             bgImg={HeroImage}
             bgPos={'50% 100%'}
@@ -72,6 +72,7 @@ const Hero = () => {
                         base: 'md',
                         md: 'xl',
                         lg: '2xl',
+                        xl: '3xl',
                     }}
                     fontWeight={'500'}
                 >
