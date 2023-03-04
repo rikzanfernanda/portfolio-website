@@ -2,23 +2,6 @@ const education = {
     title: 'Education',
     data: [
         {
-            nama: 'Independent Study at Ruangguru (Kampus Merdeka Program)',
-            study: 'Front End Engineering ',
-            description:
-                'Creating high-quality websites and dynamic applications to provide the best user experience.',
-            date: {
-                start: 'February 2022',
-                end: 'July 2022',
-            },
-            activities: [
-                'Learn basic programming',
-                'Learn React',
-                'Learn Git',
-                'Learn Project Management Tools',
-                'Learn public speaking',
-            ],
-        },
-        {
             nama: 'Dian Nuswantoro University',
             study: 'Bachelor of Computer Science',
             description:

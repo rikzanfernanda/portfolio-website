@@ -1,6 +1,6 @@
 import React from 'react'
 import bg_education from '../assets/images/bg-education.jpg'
-import { Box, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Box, Flex, Heading, SimpleGrid } from '@chakra-ui/react'
 import education from '../constants/education'
 import EducationCol from './EducationCol'
 
@@ -16,14 +16,32 @@ const Education = () => {
             bgSize={'cover'}
             minH={'100vh'}
         >
-            <Heading size={['md', '2xl']} textAlign={'center'} mb={[4, 10]}>
+            <Heading
+                size={{
+                    base: 'lg',
+                    md: 'xl',
+                    lg: '2xl',
+                    xl: '3xl',
+                }}
+                textAlign={'center'}
+                mb={{
+                    base: 8,
+                    md: '5rem',
+                    lg: '6rem',
+                }}
+            >
                 {education.title}
             </Heading>
-            <SimpleGrid columns={[1, 3]} spacing={[2, 6]} justifyContent={'center'}>
+
+            <Flex
+                justifyContent={'center'}
+                flexWrap={'wrap'}
+                gap={[2, 6]}
+            >
                 {education.data.map((item, i) => {
                     return <EducationCol item={item} key={i} />
                 })}
-            </SimpleGrid>
+            </Flex>
         </Box>
     )
 }
