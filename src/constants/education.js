@@ -2,7 +2,7 @@ const education = {
     title: 'Education',
     data: [
         {
-            nama: 'Independent Study at Ruangguru by Kampus Merdeka',
+            nama: 'Independent Study at Ruangguru (Kampus Merdeka Program)',
             study: 'Front End Engineering ',
             description:
                 'Creating high-quality websites and dynamic applications to provide the best user experience.',
@@ -20,7 +20,7 @@ const education = {
         },
         {
             nama: 'Dian Nuswantoro University',
-            study: 'Computer Science',
+            study: 'Bachelor of Computer Science',
             description:
                 'Dian Nuswantoro University is one of the private tertiary institutions accredited A located in Semarang, Indonesia.',
             date: {
