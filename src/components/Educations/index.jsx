@@ -7,8 +7,9 @@ const Educations = () => {
     return (
         <Box
             pt={{
-                base: 20,
-                md: 32
+                base: 4,
+                md: 16,
+                lg: 24,
             }}
             px={{
                 base: 3,
@@ -19,14 +20,17 @@ const Educations = () => {
                 size={{
                     base: 'lg',
                     md: 'xl',
-                    lg: '2xl',
-                    xl: '3xl'
+                    lg: 'xl',
+                    xl: '2xl'
                 }}
-                textAlign={'center'}
+                textAlign={{
+                    base: 'left',
+                    md: 'center'
+                }}
                 mb={{
-                    base: 8,
-                    md: '5rem',
-                    lg: '6rem'
+                    base: 2,
+                    md: '2rem',
+                    lg: '3rem'
                 }}
             >
                 {education.title}
