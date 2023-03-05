@@ -24,7 +24,6 @@ const LatestProject = () => {
                     lg: '2xl',
                     xl: '3xl',
                 }}
-                textAlign={'center'}
                 mb={{
                     base: 8,
                     md: '5rem',
