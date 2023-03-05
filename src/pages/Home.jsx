@@ -4,6 +4,7 @@ import MoreAbout from '../components/MoreAbout'
 import Porfolios from '../components/Porfolios'
 import Hero from '../components/Hero'
 import KampusMerdeka from '../components/KampusMerdeka'
+import LatestProjects from '../components/LatestProjects'
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Hero />
             <Education />
             <KampusMerdeka />
+            <LatestProjects />
             <MoreAbout />
             <Porfolios />
         </>

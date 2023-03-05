@@ -10,7 +10,7 @@ const ABOUT = {
     links: {
         linkedin: 'https://www.linkedin.com/in/rikzan-fernanda-9097831ab/',
         github: 'https://github.com/rikzanfernanda',
-        instagram: 'https://www.instagram.com/rikzanfernanda/',
+        gitlab: 'https://gitlab.com/rikzanfernanda',
     },
 }
 

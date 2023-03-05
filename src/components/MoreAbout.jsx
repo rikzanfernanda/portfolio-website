@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Heading, Icon, Link, List, ListItem } from '@chakra-ui/react'
 import about from '../constants/about'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { BsLinkedin, BsGithub, BsInstagram } from 'react-icons/bs'
+import { BsLinkedin, BsGithub, BsGit } from 'react-icons/bs'
 
 const MoreAbout = () => {
     return (
@@ -108,7 +108,7 @@ const MoreAbout = () => {
                     }}
                     borderRadius={'xl'}
                 >
-                    <Icon as={BsInstagram}
+                    <Icon as={BsGit}
                         boxSize={{
                             base: 10,
                             md: '8rem',
@@ -116,7 +116,7 @@ const MoreAbout = () => {
                         }}
                     />
                     <Link
-                        href={about.links.instagram}
+                        href={about.links.gitlab}
                         isExternal
                         fontSize={{
                             base: 'md',
@@ -124,7 +124,7 @@ const MoreAbout = () => {
                             lg: '4rem'
                         }}
                     >
-                        Instagram
+                        Gitlab
                     </Link>
                 </Box>
             </Box>
