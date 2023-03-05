@@ -38,7 +38,8 @@ const MoreAbout = () => {
                     }}
                     borderRadius={'xl'}
                 >
-                    <Icon as={BsLinkedin}
+                    <Icon
+                        as={BsLinkedin}
                         boxSize={{
                             base: 10,
                             md: '8rem',
@@ -73,7 +74,8 @@ const MoreAbout = () => {
                     }}
                     borderRadius={'xl'}
                 >
-                    <Icon as={BsGithub}
+                    <Icon
+                        as={BsGithub}
                         boxSize={{
                             base: 10,
                             md: '8rem',
@@ -108,7 +110,8 @@ const MoreAbout = () => {
                     }}
                     borderRadius={'xl'}
                 >
-                    <Icon as={BsGit}
+                    <Icon
+                        as={BsGit}
                         boxSize={{
                             base: 10,
                             md: '8rem',

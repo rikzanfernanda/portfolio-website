@@ -59,49 +59,49 @@ const EditingPortfolios = [
                 image: page_layout,
                 description:
                     'Make page layout design for annual book page. Include some photos and text and add effect into photos.',
-                tools: ['Photoshop'],
+                tools: ['Photoshop']
             },
             {
                 image: merge,
                 description:
                     'Merge 4 photos into one photo and edit them to realistic looks.',
-                tools: ['Photoshop'],
+                tools: ['Photoshop']
             },
             {
                 image: manipulasi_1,
                 description: 'Photo manipulation of client requests.',
-                tools: ['Photoshop'],
+                tools: ['Photoshop']
             },
             {
                 image: bag_2,
                 description:
                     'Bag product photo editing, the left is before editing and the right is after editing. Looks smoother.',
-                tools: ['Photoshop'],
+                tools: ['Photoshop']
             },
             {
                 image: cod,
                 description:
                     "The editing of COD game wallpaper photo is changing the real head into someone else's head. See the difference.",
-                tools: ['Photoshop'],
+                tools: ['Photoshop']
             },
             {
                 image: kingedit,
                 description:
                     'Photo manipulation, the difference is visible by marked with a red circle.',
-                tools: ['Photoshop'],
+                tools: ['Photoshop']
             },
             {
                 image: lipstick,
                 description:
                     'Recoloring for pink lipstick products and add gloss to the lips.',
-                tools: ['Photoshop'],
+                tools: ['Photoshop']
             },
             {
                 image: smoothing3,
                 description: "Smoothes a woman's face.",
-                tools: ['Photoshop'],
-            },
-        ],
+                tools: ['Photoshop']
+            }
+        ]
     },
     {
         title: 'Social Media',
@@ -110,84 +110,84 @@ const EditingPortfolios = [
                 image: feed_122220_2,
                 description:
                     "Instagram puzzle feed for happy mother's day content.",
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: feed_122220_1,
                 description: 'Instagram puzzle feed example',
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: feedig_3,
                 description: 'Instagram for senior high school exam',
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: feedig_2,
                 description: 'Instagram feed for ramadhan',
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: feedig_1,
                 description: 'Instagram feed for happy ramadhan',
-                tools: ['Photoshop'],
+                tools: ['Photoshop']
             },
             {
                 image: food_3,
                 description: 'Instagram feed for restorant menu',
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: food_2,
                 description: 'Instagram feed example',
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: food_1,
                 description: 'Instagram feed example',
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: quiz_1,
                 description: 'Instagram feed example',
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: shapess_2,
                 description: 'Instagram feed example',
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: fathersday17a,
                 description: 'Instagram feed example',
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: sosmed_text,
                 description: 'Instagram feed example',
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: sosmed6,
                 description: 'Instagram feed example',
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: sosmed5_m,
                 description: 'Instagram feed example',
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: sosmed4_m,
                 description: 'Instagram feed example',
-                tools: ['Photoshop', 'Canva'],
+                tools: ['Photoshop', 'Canva']
             },
             {
                 image: sosmed3_m,
                 description: 'Instagram feed example',
-                tools: ['Photoshop', 'Canva'],
-            },
-        ],
+                tools: ['Photoshop', 'Canva']
+            }
+        ]
     },
     {
         title: 'Illustration',
@@ -195,39 +195,39 @@ const EditingPortfolios = [
             {
                 image: eidaladha_character7,
                 description: 'Islamic themed banner background.',
-                tools: ['Photoshop', 'Illustrator'],
+                tools: ['Photoshop', 'Illustrator']
             },
             {
                 image: eidaladha_character8,
                 description: 'Islamic themed banner background.',
-                tools: ['Illustrator'],
+                tools: ['Illustrator']
             },
             {
                 image: eidaladha_character12,
                 description: 'Islamic themed banner background.',
-                tools: ['Illustrator'],
+                tools: ['Illustrator']
             },
             {
                 image: eidaladha_character14,
                 description: 'Islamic themed banner background.',
-                tools: ['Illustrator'],
+                tools: ['Illustrator']
             },
             {
                 image: move16,
                 description: 'Islamic themed banner background.',
-                tools: ['Illustrator'],
+                tools: ['Illustrator']
             },
             {
                 image: landing_page_1,
                 description: 'Christmas themed background for landing page.',
-                tools: ['Illustrator'],
+                tools: ['Illustrator']
             },
             {
                 image: landing_page_2,
                 description: '',
-                tools: ['Illustrator'],
-            },
-        ],
+                tools: ['Illustrator']
+            }
+        ]
     },
     {
         title: 'Poster',
@@ -236,10 +236,10 @@ const EditingPortfolios = [
                 image: poster_1,
                 description:
                     'Posters about the importance of safety for tailors (in Indonesian).',
-                tools: ['Photoshop', 'Canva'],
-            },
-        ],
-    },
+                tools: ['Photoshop', 'Canva']
+            }
+        ]
+    }
 ]
 
 export default EditingPortfolios

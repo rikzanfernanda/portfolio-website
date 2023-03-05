@@ -11,7 +11,7 @@ const Hero = () => {
             p={{
                 base: 6,
                 md: 10,
-                lg: '10rem',
+                lg: '10rem'
             }}
             bgImg={HeroImage}
             bgPos={'50% 100%'}
@@ -30,10 +30,10 @@ const Hero = () => {
                 boxSize={{
                     base: 100,
                     md: 150,
-                    lg: 200,
+                    lg: 200
                 }}
                 mb={{
-                    base: 4,
+                    base: 4
                 }}
                 bgSize={'cover'}
                 objectFit={'cover'}
@@ -43,14 +43,14 @@ const Hero = () => {
                 mb={{
                     base: 8,
                     md: 12,
-                    lg: 14,
+                    lg: 14
                 }}
             >
                 <Text
                     fontSize={{
                         base: '3xl',
                         md: '6xl',
-                        lg: '7xl',
+                        lg: '7xl'
                     }}
                     fontWeight={'bold'}
                 >
@@ -60,7 +60,7 @@ const Hero = () => {
                     fontSize={{
                         base: 'md',
                         md: 'xl',
-                        lg: '2xl',
+                        lg: '2xl'
                     }}
                 >
                     {ABOUT.note}
@@ -72,7 +72,7 @@ const Hero = () => {
                         base: 'md',
                         md: 'xl',
                         lg: '2xl',
-                        xl: '3xl',
+                        xl: '3xl'
                     }}
                     fontWeight={'500'}
                 >

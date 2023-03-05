@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, Icon, Image, Link, Text } from '@chakra-ui/react'
 import React from 'react'
-import { FiChevronRight } from "react-icons/fi";
+import { FiChevronRight } from 'react-icons/fi'
 
 const ProjectCard = ({ project }) => {
     return (
@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
                 base: 2,
                 lg: 4
             }}
-            background='linear-gradient(to right, #c9d6ff, #e2e2e2)'
+            background="linear-gradient(to right, #c9d6ff, #e2e2e2)"
             p={{
                 base: 2,
                 lg: 4,
@@ -73,7 +73,7 @@ const ProjectCard = ({ project }) => {
                     p={{
                         base: 1
                     }}
-                    borderRadius='100%'
+                    borderRadius="100%"
                     fontSize={{
                         base: '.8rem',
                         lg: '1.8rem'
@@ -95,7 +95,7 @@ const ProjectCard = ({ project }) => {
                     lg: 16,
                     xl: 24
                 }}
-                background='linear-gradient(to left, #da4453, #89216b)'
+                background="linear-gradient(to left, #da4453, #89216b)"
                 px={{
                     base: 4,
                     lg: 8

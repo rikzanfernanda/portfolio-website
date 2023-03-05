@@ -7,7 +7,7 @@ const KmCard = ({ item }) => {
         <Box
             borderWidth={{
                 base: '1px',
-                md: '2px',
+                md: '2px'
             }}
             borderColor={'gray.200'}
             borderRadius={'xl'}
@@ -25,7 +25,9 @@ const KmCard = ({ item }) => {
                 lg: '38rem'
             }}
         >
-            <Flex alignItems={'center'} justifyContent={'center'}
+            <Flex
+                alignItems={'center'}
+                justifyContent={'center'}
                 bgColor={'gray.100'}
                 borderRadius={'xl'}
                 p={{
@@ -33,7 +35,7 @@ const KmCard = ({ item }) => {
                     md: 6
                 }}
                 mb={{
-                    base: 3,
+                    base: 3
                 }}
             >
                 <Image
@@ -51,7 +53,7 @@ const KmCard = ({ item }) => {
                     size={{
                         base: 'sm',
                         md: 'lg',
-                        lg: 'xl',
+                        lg: 'xl'
                     }}
                 >
                     {item.title}
@@ -60,7 +62,7 @@ const KmCard = ({ item }) => {
                     fontSize={{
                         base: 'sm',
                         md: 'xl',
-                        lg: '2xl',
+                        lg: '2xl'
                     }}
                 >
                     {item.company}
@@ -69,22 +71,22 @@ const KmCard = ({ item }) => {
                     fontSize={{
                         base: 'sm',
                         md: 'xl',
-                        lg: '2xl',
+                        lg: '2xl'
                     }}
                     color={'gray.500'}
                 >
                     {item.duration}
                 </Text>
-                <Divider 
+                <Divider
                     my={{
-                        base: 3,
+                        base: 3
                     }}
                 />
                 <Text
                     fontSize={{
                         base: 'sm',
                         md: 'xl',
-                        lg: '2xl',
+                        lg: '2xl'
                     }}
                 >
                     {item.description}
@@ -102,7 +104,7 @@ const kampusMerdeka = () => {
                 md: 32
             }}
             px={{
-                base: 3,
+                base: 3
             }}
             minH={'100vh'}
         >
@@ -111,13 +113,13 @@ const kampusMerdeka = () => {
                     base: 'lg',
                     md: 'xl',
                     lg: '2xl',
-                    xl: '3xl',
+                    xl: '3xl'
                 }}
                 textAlign={'center'}
                 mb={{
                     base: 8,
                     md: '5rem',
-                    lg: '6rem',
+                    lg: '6rem'
                 }}
             >
                 {KM.title}
@@ -129,11 +131,11 @@ const kampusMerdeka = () => {
                 gap={{
                     base: 4,
                     md: 8,
-                    lg: 12,
+                    lg: 12
                 }}
                 flexDirection={{
                     base: 'column',
-                    md: 'row',
+                    md: 'row'
                 }}
             >
                 {KM.data.map((item, i) => {

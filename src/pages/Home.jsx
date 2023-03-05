@@ -7,7 +7,7 @@ import KampusMerdeka from '../components/KampusMerdeka'
 import LatestProjects from '../components/LatestProjects'
 import { Box, Text } from '@chakra-ui/react'
 import ABOUT from '../constants/about'
-import { MdContentCopy } from "react-icons/md";
+import { MdContentCopy } from 'react-icons/md'
 
 const Contact = () => {
     return (
@@ -31,7 +31,7 @@ const Contact = () => {
             }}
         >
             <Box
-                background='linear-gradient(to left, #da4453, #89216b)'
+                background="linear-gradient(to left, #da4453, #89216b)"
                 color={'white'}
                 borderRadius={'full'}
                 px={{
@@ -51,7 +51,7 @@ const Contact = () => {
                 <Text
                     fontSize={{
                         base: '.85rem',
-                        lg: '1rem',
+                        lg: '1rem'
                     }}
                 >
                     {ABOUT.contact.email}

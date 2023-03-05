@@ -11,7 +11,7 @@ const PortfoliosHome = ({ portfolio, link }) => {
             <Text fontSize={['xs', 'md']} mb={[2, 4]}>
                 {portfolio.description}
             </Text>
-            <Link to={link} target='_blank'>
+            <Link to={link} target="_blank">
                 <Button
                     variant={'solid'}
                     colorScheme={'blue'}

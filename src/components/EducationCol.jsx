@@ -14,14 +14,14 @@ const EducationCol = ({ item }) => {
                 sm: '20rem',
                 md: '30rem',
                 lg: '34rem',
-                xl: '40rem',
+                xl: '40rem'
             }}
         >
             <Heading
                 fontSize={{
                     base: 'md',
                     md: '1.6rem',
-                    lg: '2rem',
+                    lg: '2rem'
                 }}
                 color={'blue.500'}
                 mb={[0, 2]}
@@ -32,16 +32,13 @@ const EducationCol = ({ item }) => {
                 fontSize={{
                     base: 'sm',
                     md: '1.2rem',
-                    lg: '1.6rem',
+                    lg: '1.6rem'
                 }}
                 fontWeight={'bold'}
             >
                 {item.study}
             </Text>
-            <Text
-                fontSize={['.8rem', '1rem', '1.2rem']}
-                mb={[1, 2]}
-            >
+            <Text fontSize={['.8rem', '1rem', '1.2rem']} mb={[1, 2]}>
                 {item.date.start} - {item.date.end}
             </Text>
             <Divider mb={[1, 2]} />
@@ -49,7 +46,7 @@ const EducationCol = ({ item }) => {
                 fontSize={{
                     base: 'sm',
                     md: '1.2rem',
-                    lg: '1.6rem',
+                    lg: '1.6rem'
                 }}
             >
                 {item.description}

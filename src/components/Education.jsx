@@ -21,23 +21,19 @@ const Education = () => {
                     base: 'lg',
                     md: 'xl',
                     lg: '2xl',
-                    xl: '3xl',
+                    xl: '3xl'
                 }}
                 textAlign={'center'}
                 mb={{
                     base: 8,
                     md: '5rem',
-                    lg: '6rem',
+                    lg: '6rem'
                 }}
             >
                 {education.title}
             </Heading>
 
-            <Flex
-                justifyContent={'center'}
-                flexWrap={'wrap'}
-                gap={[2, 6]}
-            >
+            <Flex justifyContent={'center'} flexWrap={'wrap'} gap={[2, 6]}>
                 {education.data.map((item, i) => {
                     return <EducationCol item={item} key={i} />
                 })}

@@ -16,7 +16,8 @@ const Wrapper = ({ children }) => {
 }
 
 const LinkToProjects = () => {
-    window.location.href = 'https://www.linkedin.com/in/rikzan-fernanda-9097831ab/details/projects/'
+    window.location.href =
+        'https://www.linkedin.com/in/rikzan-fernanda-9097831ab/details/projects/'
     return null
 }
 

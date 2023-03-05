@@ -15,19 +15,19 @@ const LatestProject = () => {
                 md: '10rem'
             }}
             minH={'100vh'}
-            background='linear-gradient(180deg, #16222a, #3a6073)'
+            background="linear-gradient(180deg, #16222a, #3a6073)"
         >
             <Heading
                 size={{
                     base: 'lg',
                     md: 'xl',
                     lg: '2xl',
-                    xl: '3xl',
+                    xl: '3xl'
                 }}
                 mb={{
                     base: 8,
                     md: '5rem',
-                    lg: '6rem',
+                    lg: '6rem'
                 }}
                 color={'white'}
             >
@@ -38,14 +38,13 @@ const LatestProject = () => {
                 flexDirection={'column'}
                 gap={{
                     base: 6,
-                    lg: 12,
+                    lg: 12
                 }}
             >
-                {LATEST_PROJECTS.data.length > 0 && LATEST_PROJECTS.data.map((project, i) => {
-                    return (
-                        <ProjectCard key={i} project={project} />
-                    )
-                })}
+                {LATEST_PROJECTS.data.length > 0 &&
+                    LATEST_PROJECTS.data.map((project, i) => {
+                        return <ProjectCard key={i} project={project} />
+                    })}
             </Flex>
 
             <Box
@@ -56,14 +55,16 @@ const LatestProject = () => {
                 }}
             >
                 <Link
-                    href={'https://www.linkedin.com/in/rikzan-fernanda-9097831ab/details/projects/'}
+                    href={
+                        'https://www.linkedin.com/in/rikzan-fernanda-9097831ab/details/projects/'
+                    }
                     isExternal
                     backgroundColor={'white'}
                     p={{
-                        base: 2,
+                        base: 2
                     }}
                     px={{
-                        base: 4,
+                        base: 4
                     }}
                     borderRadius={'full'}
                 >
