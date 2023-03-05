@@ -1,5 +1,4 @@
 import React from 'react'
-import Education from '../components/Education'
 import MoreAbout from '../components/MoreAbout'
 import Porfolios from '../components/Porfolios'
 import Hero from '../components/Hero'
@@ -8,6 +7,7 @@ import LatestProjects from '../components/LatestProjects'
 import { Box, Text } from '@chakra-ui/react'
 import ABOUT from '../constants/about'
 import { MdContentCopy } from 'react-icons/md'
+import Educations from '../components/Educations'
 
 const Contact = () => {
     return (
@@ -67,7 +67,7 @@ const Home = () => {
         <>
             <Contact />
             <Hero />
-            <Education />
+            <Educations />
             <KampusMerdeka />
             <LatestProjects />
             <MoreAbout />
