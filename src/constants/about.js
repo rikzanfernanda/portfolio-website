@@ -12,6 +12,9 @@ const ABOUT = {
         github: 'https://github.com/rikzanfernanda',
         gitlab: 'https://gitlab.com/rikzanfernanda',
     },
+    contact: {
+        email: 'rikzanfernanda@gmail.com'
+    }
 }
 
 export default ABOUT
