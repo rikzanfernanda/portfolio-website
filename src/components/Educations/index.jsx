@@ -9,7 +9,7 @@ const Educations = () => {
             pt={{
                 base: 4,
                 md: 16,
-                lg: 24,
+                lg: 24
             }}
             px={{
                 base: 3,
@@ -17,18 +17,18 @@ const Educations = () => {
             }}
         >
             <Heading
-                size={{
-                    base: 'lg',
-                    md: 'xl',
-                    lg: 'xl',
-                    xl: '2xl'
+                fontSize={{
+                    base: '.85rem',
+                    md: '1.4rem',
+                    lg: '1.8rem',
+                    xl: '2.5rem'
                 }}
                 textAlign={{
                     base: 'left',
                     md: 'center'
                 }}
                 mb={{
-                    base: 2,
+                    base: 3,
                     md: '2rem',
                     lg: '3rem'
                 }}

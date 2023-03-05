@@ -5,16 +5,6 @@ import KM from '../constants/kampus-merdeka'
 const KmCard = ({ item }) => {
     return (
         <Box
-            borderWidth={{
-                base: '1px',
-                md: '2px'
-            }}
-            borderColor={'gray.200'}
-            borderRadius={'xl'}
-            p={{
-                base: 3,
-                md: 6
-            }}
             pb={{
                 base: 6,
                 md: 8
@@ -22,14 +12,16 @@ const KmCard = ({ item }) => {
             w={{
                 base: '100%',
                 md: '30rem',
-                lg: '38rem'
+                lg: '34rem'
             }}
         >
             <Flex
                 alignItems={'center'}
                 justifyContent={'center'}
                 bgColor={'gray.100'}
-                borderRadius={'xl'}
+                borderRadius={{
+                    base: '1.25rem'
+                }}
                 p={{
                     base: 3,
                     md: 6
@@ -50,10 +42,10 @@ const KmCard = ({ item }) => {
             </Flex>
             <Box>
                 <Heading
-                    size={{
+                    fontSize={{
                         base: 'sm',
                         md: 'lg',
-                        lg: 'xl'
+                        lg: '1.5rem'
                     }}
                 >
                     {item.title}
@@ -61,8 +53,8 @@ const KmCard = ({ item }) => {
                 <Text
                     fontSize={{
                         base: 'sm',
-                        md: 'xl',
-                        lg: '2xl'
+                        md: 'lg',
+                        lg: '1.2rem'
                     }}
                 >
                     {item.company}
@@ -70,8 +62,8 @@ const KmCard = ({ item }) => {
                 <Text
                     fontSize={{
                         base: 'sm',
-                        md: 'xl',
-                        lg: '2xl'
+                        md: 'lg',
+                        lg: '1.2rem'
                     }}
                     color={'gray.500'}
                 >
@@ -85,8 +77,8 @@ const KmCard = ({ item }) => {
                 <Text
                     fontSize={{
                         base: 'sm',
-                        md: 'xl',
-                        lg: '2xl'
+                        md: 'lg',
+                        lg: '1.2rem'
                     }}
                 >
                     {item.description}
@@ -99,27 +91,35 @@ const KmCard = ({ item }) => {
 const kampusMerdeka = () => {
     return (
         <Box
-            py={{
-                base: 20,
-                md: 32
+            pt={{
+                base: 4,
+                md: 24
             }}
             px={{
-                base: 3
+                base: 3,
+                md: '2rem',
+                lg: '8rem'
+            }}
+            pb={{
+                base: 0
             }}
             minH={'100vh'}
         >
             <Heading
-                size={{
-                    base: 'lg',
-                    md: 'xl',
-                    lg: '2xl',
-                    xl: '3xl'
+                fontSize={{
+                    base: '.85rem',
+                    md: '1.4rem',
+                    lg: '1.8rem',
+                    xl: '2.5rem'
                 }}
-                textAlign={'center'}
+                textAlign={{
+                    base: 'left',
+                    md: 'center'
+                }}
                 mb={{
-                    base: 8,
-                    md: '5rem',
-                    lg: '6rem'
+                    base: 3,
+                    md: '2rem',
+                    lg: '3rem'
                 }}
             >
                 {KM.title}
@@ -127,11 +127,10 @@ const kampusMerdeka = () => {
 
             <Flex
                 justifyContent={'center'}
-                flexWrap={'wrap'}
                 gap={{
                     base: 4,
-                    md: 8,
-                    lg: 12
+                    md: 10,
+                    lg: 24
                 }}
                 flexDirection={{
                     base: 'column',
