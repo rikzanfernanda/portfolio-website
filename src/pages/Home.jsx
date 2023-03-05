@@ -14,7 +14,7 @@ const Contact = () => {
         <Box
             position={'fixed'}
             bottom={{
-                base: 3,
+                base: 4,
                 lg: 6
             }}
             width={'100%'}
@@ -35,21 +35,22 @@ const Contact = () => {
                 color={'white'}
                 borderRadius={'full'}
                 px={{
-                    base: 3,
+                    base: 4,
                     lg: 6
                 }}
                 py={{
-                    base: 1,
+                    base: 2,
                     lg: 3
                 }}
                 display={'flex'}
                 justifyContent={'center'}
                 alignItems={'center'}
                 gap={2}
+                boxShadow={'0 2px 20px -5px rgba(0,0,0,0.75)'}
             >
                 <Text
                     fontSize={{
-                        base: '.8rem',
+                        base: '.85rem',
                         lg: '1rem',
                     }}
                 >
