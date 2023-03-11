@@ -8,7 +8,6 @@ const Hero = () => {
         <Box
             bgColor={'blackAlpha.50'}
             h={'100vh'}
-            minH="600px"
             p={{
                 base: 6,
                 md: 10,
