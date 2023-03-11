@@ -12,7 +12,8 @@ const KmCard = ({ item }) => {
             w={{
                 base: '100%',
                 md: '30rem',
-                lg: '34rem'
+                lg: '34rem',
+                xl: '30rem'
             }}
         >
             <Flex
@@ -33,11 +34,12 @@ const KmCard = ({ item }) => {
                 <Image
                     src={item.image}
                     h={{
-                        base: '8rem',
+                        base: '12rem',
                         md: '14rem',
                         lg: '20rem'
                     }}
                     w={'auto'}
+                    objectFit={'contain'}
                 />
             </Flex>
             <Box>
