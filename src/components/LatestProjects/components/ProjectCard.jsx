@@ -42,7 +42,7 @@ const ProjectCard = ({ project }) => {
                     fontSize={{
                         base: '.8rem',
                         lg: '1.5rem',
-                        xl: '2rem'
+                        xl: '1.5rem'
                     }}
                     mb={{
                         base: 1,
@@ -55,7 +55,8 @@ const ProjectCard = ({ project }) => {
                     fontSize={{
                         base: '.75rem',
                         lg: '1rem',
-                        xl: '1.25rem'
+                        xl: '1rem',
+                        '2xl': '1.2rem'
                     }}
                 >
                     {project.description}
