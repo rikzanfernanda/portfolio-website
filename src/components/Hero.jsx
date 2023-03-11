@@ -8,6 +8,7 @@ const Hero = () => {
         <Box
             bgColor={'blackAlpha.50'}
             h={'100vh'}
+            minH='600px'
             p={{
                 base: 6,
                 md: 10,
@@ -59,8 +60,9 @@ const Hero = () => {
                 <Text
                     fontSize={{
                         base: 'md',
-                        md: 'xl',
-                        lg: '2xl'
+                        md: '1rem',
+                        lg: '1rem',
+                        xl: '1.25rem'
                     }}
                 >
                     {ABOUT.note}
@@ -70,9 +72,9 @@ const Hero = () => {
                 <Text
                     fontSize={{
                         base: 'md',
-                        md: 'xl',
-                        lg: '2xl',
-                        xl: '3xl'
+                        md: '1rem',
+                        lg: '1rem',
+                        xl: '1.25rem'
                     }}
                     fontWeight={'500'}
                 >
