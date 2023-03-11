@@ -4,12 +4,14 @@ import Porfolios from '../components/Porfolios'
 import Hero from '../components/Hero'
 import KampusMerdeka from '../components/KampusMerdeka'
 import LatestProjects from '../components/LatestProjects'
-import { Box, Text } from '@chakra-ui/react'
+import { Box, Text, useToast } from '@chakra-ui/react'
 import ABOUT from '../constants/about'
 import { MdContentCopy } from 'react-icons/md'
 import Educations from '../components/Educations'
 
 const Contact = () => {
+    const toast = useToast()
+
     return (
         <Box
             position={'fixed'}
@@ -56,7 +58,18 @@ const Contact = () => {
                 >
                     {ABOUT.contact.email}
                 </Text>
-                <MdContentCopy />
+                <MdContentCopy
+                    cursor={'pointer'}
+                    onClick={() => {
+                        navigator.clipboard.writeText(ABOUT.contact.email)
+                        toast({
+                            position: 'top-center',
+                            title: 'Email copied',
+                            status: 'success',
+                            duration: 2000
+                        })
+                    }}
+                />
             </Box>
         </Box>
     )
