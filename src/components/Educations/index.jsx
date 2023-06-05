@@ -13,20 +13,18 @@ const Educations = () => {
             }}
             backgroundColor={'gray.100'}
         >
-            <Container
-                maxW={'container.xl'}
-            >
+            <Container maxW={'container.xl'}>
                 <Heading
                     fontSize={{
                         base: '.85rem',
-                        md: '2rem',
+                        md: '2rem'
                     }}
                     textAlign={{
-                        base: 'left',
+                        base: 'left'
                     }}
                     mb={{
                         base: 3,
-                        md: '1.25rem',
+                        md: '1.25rem'
                     }}
                 >
                     {education.title}

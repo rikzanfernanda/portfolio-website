@@ -1,15 +1,16 @@
 import { Box, Container, Image, Text } from '@chakra-ui/react'
 import React from 'react'
-import HeroImage from '../assets/images/bg-jumbotron.jpg'
 import ABOUT from '../constants/about'
+import HeroGif from '../assets/images/hero-gif.gif'
 
 const Hero = () => {
     return (
         <Box
             bgColor={'blackAlpha.50'}
             h={'100vh'}
-            bgImg={HeroImage}
-            bgPos={'50% 100%'}
+            bgImg={HeroGif}
+            bgPos={'center'}
+            bgAttachment={'fixed'}
             bgRepeat={'no-repeat'}
             bgSize={'cover'}
             display={'flex'}
@@ -18,12 +19,8 @@ const Hero = () => {
             color={'white'}
             flexDirection={'column'}
         >
-            <Container
-                maxW={'container.xl'}
-            >
-                <Box
-                    textAlign={'center'}
-                >
+            <Container maxW={'container.xl'}>
+                <Box textAlign={'center'}>
                     <Image
                         src={ABOUT.profile}
                         alt={'profile'}
