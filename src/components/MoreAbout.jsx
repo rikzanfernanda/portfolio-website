@@ -1,7 +1,6 @@
 import React from 'react'
-import { Box, Heading, Icon, Link, List, ListItem } from '@chakra-ui/react'
+import { Box, Heading, Icon, Link } from '@chakra-ui/react'
 import about from '../constants/about'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { BsLinkedin, BsGithub, BsGit } from 'react-icons/bs'
 
 const MoreAbout = () => {

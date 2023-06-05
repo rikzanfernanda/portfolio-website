@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Icon, Image, Link, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Image, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 import { FiChevronRight } from 'react-icons/fi'
 

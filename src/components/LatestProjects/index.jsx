@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Link, Text } from '@chakra-ui/react'
+import { Box, Flex, Heading, Link } from '@chakra-ui/react'
 import React from 'react'
 import LATEST_PROJECTS from '../../constants/latest-projects'
 import ProjectCard from './components/ProjectCard'
