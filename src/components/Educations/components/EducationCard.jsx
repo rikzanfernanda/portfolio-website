@@ -26,27 +26,39 @@ const EducationCard = ({ item }) => {
                 lg: 20
             }}
             borderRadius={{
-                base: '1.25rem',
-                md: '2rem',
-                lg: '3rem'
+                base: 10,
+                md: 20
             }}
             gap={{
-                base: 4
+                base: 4,
+                md: 20,
             }}
         >
             <Box>
-                <Heading
-                    fontSize={{
-                        base: '1rem',
-                        md: '1.25rem',
-                        lg: '2.25rem'
-                    }}
-                    mb={{
-                        base: 1
-                    }}
-                >
-                    {item.nama}
-                </Heading>
+                <Box mb={6}>
+                    <Heading
+                        fontSize={{
+                            base: '1rem',
+                            md: '1.25rem',
+                            lg: '2.25rem'
+                        }}
+                        mb={{
+                            base: 1
+                        }}
+                    >
+                        {item.nama}
+                    </Heading>
+                    <Text
+                        fontSize={{
+                            base: '.75rem',
+                            md: '.9rem',
+                            lg: '1.25rem'
+                        }}
+                    >
+                        {item.study}
+                    </Text>
+                </Box>
+
                 <Text
                     fontSize={{
                         base: '.75rem',
@@ -54,13 +66,14 @@ const EducationCard = ({ item }) => {
                         lg: '1.25rem'
                     }}
                 >
-                    {item.study}
+                    {item.description}
                 </Text>
+
                 <Box
                     background={'linear-gradient(to right, #fe8c00, #f83600)'}
                     display={'inline-block'}
                     px={{
-                        base: 3
+                        base: 4
                     }}
                     py={{
                         base: 1
@@ -83,26 +96,21 @@ const EducationCard = ({ item }) => {
                     </Text>
                 </Box>
             </Box>
+            
             <Box
                 w={{
                     base: '8rem',
-                    md: '12rem',
-                    lg: '16rem'
+                    md: '36rem',
                 }}
                 h={{
-                    base: '8rem',
-                    md: '12rem',
-                    lg: '16rem'
+                    base: 'auto',
                 }}
-                display={'flex'}
+                display={{
+                    base: 'none',
+                    md: 'flex'
+                }}
                 justifyContent={'center'}
                 alignItems={'center'}
-                borderRadius={{
-                    base: '1.25rem',
-                    md: '2rem',
-                    lg: '3rem'
-                }}
-                background={'gray.100'}
             >
                 <Image
                     src={IconEducation}

@@ -5,7 +5,7 @@ const education = {
             nama: 'Dian Nuswantoro University',
             study: 'Bachelor of Computer Science',
             description:
-                'Dian Nuswantoro University is one of the private tertiary institutions accredited A located in Semarang, Indonesia.',
+                'Activities and societies: Focus on computer science, create web and mobile applications, become a laboratory assistant, and administrator of the Dian Nuswantoro Club.',
             date: {
                 start: '2019',
                 end: '2023'
