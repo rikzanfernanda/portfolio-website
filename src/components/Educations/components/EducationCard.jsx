@@ -31,7 +31,7 @@ const EducationCard = ({ item }) => {
             }}
             gap={{
                 base: 4,
-                md: 20,
+                md: 20
             }}
         >
             <Box>
@@ -96,14 +96,14 @@ const EducationCard = ({ item }) => {
                     </Text>
                 </Box>
             </Box>
-            
+
             <Box
                 w={{
                     base: '8rem',
-                    md: '36rem',
+                    md: '36rem'
                 }}
                 h={{
-                    base: 'auto',
+                    base: 'auto'
                 }}
                 display={{
                     base: 'none',

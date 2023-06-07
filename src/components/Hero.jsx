@@ -77,10 +77,12 @@ const Hero = () => {
                         {ABOUT.note}
                     </Text>
                 </Box>
-                <Box textAlign={{
-                    base: 'center',
-                    md: 'left'
-                }}>
+                <Box
+                    textAlign={{
+                        base: 'center',
+                        md: 'left'
+                    }}
+                >
                     <Text
                         fontSize={{
                             base: 'md',
