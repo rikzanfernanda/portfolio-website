@@ -7,7 +7,7 @@ const Educations = () => {
     return (
         <Box
             py={{
-                base: 6,
+                base: 8,
                 md: 16,
                 lg: 24
             }}
@@ -16,11 +16,11 @@ const Educations = () => {
             <Container maxW={'container.xl'}>
                 <Heading
                     fontSize={{
-                        base: '.85rem',
+                        base: '1rem',
                         md: '2rem'
                     }}
                     textAlign={{
-                        base: 'left'
+                        base: 'center'
                     }}
                     mb={{
                         base: 3,
