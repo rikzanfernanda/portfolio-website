@@ -1,22 +1,27 @@
 import { Box, Container, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import ABOUT from '../constants/about'
-import HeroGif from '../assets/images/hero-gif.gif'
 
 const Hero = () => {
     return (
         <Box
             bgColor={'blackAlpha.50'}
             h={'100vh'}
-            bgImg={HeroGif}
+            background="linear-gradient(360deg, #16222a, #3a6073)"
             bgPos={'center'}
             bgAttachment={'fixed'}
             bgRepeat={'no-repeat'}
             bgSize={'cover'}
             display={'flex'}
-            justifyContent={'center'}
+            justifyContent={{
+                base: 'center',
+                md: 'flex-end'
+            }}
             color={'white'}
             flexDirection={'column'}
+            pb={{
+                md: 28
+            }}
         >
             <Container maxW={'container.xl'}>
                 <Box>
