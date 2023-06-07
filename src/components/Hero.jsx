@@ -15,12 +15,11 @@ const Hero = () => {
             bgSize={'cover'}
             display={'flex'}
             justifyContent={'center'}
-            alignItems={'center'}
             color={'white'}
             flexDirection={'column'}
         >
             <Container maxW={'container.xl'}>
-                <Box textAlign={'center'}>
+                <Box>
                     <Image
                         src={ABOUT.profile}
                         alt={'profile'}
@@ -35,11 +34,17 @@ const Hero = () => {
                         }}
                         bgSize={'cover'}
                         objectFit={'cover'}
-                        marginX={'auto'}
+                        mx={{
+                            base: 'auto',
+                            md: '0'
+                        }}
                     />
                 </Box>
                 <Box
-                    textAlign={'center'}
+                    textAlign={{
+                        base: 'center',
+                        md: 'left'
+                    }}
                     mb={{
                         base: 8,
                         md: 12,
@@ -67,7 +72,10 @@ const Hero = () => {
                         {ABOUT.note}
                     </Text>
                 </Box>
-                <Box textAlign={'center'}>
+                <Box textAlign={{
+                    base: 'center',
+                    md: 'left'
+                }}>
                     <Text
                         fontSize={{
                             base: 'md',
