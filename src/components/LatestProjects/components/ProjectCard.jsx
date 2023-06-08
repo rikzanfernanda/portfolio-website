@@ -8,16 +8,17 @@ const ProjectCard = ({ project }) => {
             <Image
                 src={project.image}
                 w={{
-                    base: 'auto',
+                    base: 'auto'
                 }}
                 h={'auto'}
                 objectFit={'contain'}
             />
 
-            <Box px={{
-                base: 2,
-                md: 4,
-            }}
+            <Box
+                px={{
+                    base: 2,
+                    md: 4
+                }}
                 display={'flex'}
                 flexDirection={'column'}
                 gap={{
@@ -25,7 +26,8 @@ const ProjectCard = ({ project }) => {
                     md: 1.4
                 }}
             >
-                <Heading as={'h3'}
+                <Heading
+                    as={'h3'}
                     fontSize={{
                         base: 14,
                         md: 18
@@ -53,10 +55,12 @@ const ProjectCard = ({ project }) => {
                     {project.description}
                 </Text>
 
-                <Flex mt={{
-                    base: 4,
-                    md: 6
-                }}>
+                <Flex
+                    mt={{
+                        base: 4,
+                        md: 6
+                    }}
+                >
                     <Link
                         href={project.link}
                         isExternal

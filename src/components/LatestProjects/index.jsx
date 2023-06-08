@@ -1,4 +1,13 @@
-import { Box, Container, Divider, Flex, Heading, Link, SimpleGrid, useBreakpointValue } from '@chakra-ui/react'
+import {
+    Box,
+    Container,
+    Divider,
+    Flex,
+    Heading,
+    Link,
+    SimpleGrid,
+    useBreakpointValue
+} from '@chakra-ui/react'
 import LATEST_PROJECTS from '../../constants/latest-projects'
 import ProjectCard from './components/ProjectCard'
 
@@ -54,25 +63,33 @@ const LatestProject = () => {
 
                 {!isMobile && (
                     <>
-                        <SimpleGrid columns={{
-                            base: 2,
-                            lg: 4
-                        }}
+                        <SimpleGrid
+                            columns={{
+                                base: 2,
+                                lg: 4
+                            }}
                             columnGap={2}
                             rowGap={8}
                         >
                             {LATEST_PROJECTS.data.length > 0 &&
                                 LATEST_PROJECTS.data.map((project, i) => {
-                                    return <ProjectCard key={i} project={project} />
+                                    return (
+                                        <ProjectCard
+                                            key={i}
+                                            project={project}
+                                        />
+                                    )
                                 })}
                         </SimpleGrid>
                     </>
                 )}
 
-                <Divider mt={{
-                    base: 4,
-                    md: 10
-                }} />
+                <Divider
+                    mt={{
+                        base: 4,
+                        md: 10
+                    }}
+                />
 
                 <Box
                     textAlign={'center'}
