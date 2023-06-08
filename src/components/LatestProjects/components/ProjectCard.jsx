@@ -4,123 +4,88 @@ import { FiChevronRight } from 'react-icons/fi'
 
 const ProjectCard = ({ project }) => {
     return (
-        <Box
-            display={'flex'}
-            gap={{
-                base: 2,
-                lg: 4
-            }}
-            background="linear-gradient(to right, #c9d6ff, #e2e2e2)"
-            p={{
-                base: 2,
-                lg: 4,
-                xl: 6
-            }}
-            borderRadius={{
-                base: 'xl',
-                lg: '3xl'
-            }}
-            position={'relative'}
-        >
+        <Box color={'white'}>
             <Image
                 src={project.image}
                 w={{
-                    base: '6rem',
-                    lg: '20rem',
-                    xl: '26rem'
+                    base: 'auto',
                 }}
-                h={'100%'}
+                h={'auto'}
+                objectFit={'contain'}
             />
 
-            <Box
-                flexGrow={1}
-                pb={{
-                    base: 5
+            <Box px={{
+                base: 2,
+                md: 4,
+            }}
+                display={'flex'}
+                flexDirection={'column'}
+                gap={{
+                    base: 1,
+                    md: 1.4
                 }}
             >
-                <Heading
+                <Heading as={'h3'}
                     fontSize={{
-                        base: '.8rem',
-                        lg: '1.5rem',
-                        xl: '1.5rem'
+                        base: 14,
+                        md: 18
                     }}
-                    mb={{
-                        base: 1,
-                        lg: 2
-                    }}
+                    noOfLines={1}
                 >
                     {project.project_name}
                 </Heading>
                 <Text
                     fontSize={{
-                        base: '.75rem',
-                        lg: '1rem',
-                        xl: '1rem',
-                        '2xl': '1.2rem'
+                        base: 12,
+                        md: 16
                     }}
-                >
-                    {project.description}
-                </Text>
-            </Box>
-            <Flex
-                flexDirection={'column'}
-                justifyContent={'center'}
-                alignItems={'center'}
-            >
-                <Link
-                    href={project.link}
-                    isExternal
-                    backgroundColor={'white'}
-                    p={{
-                        base: 1
-                    }}
-                    borderRadius="100%"
-                    fontSize={{
-                        base: '.8rem',
-                        lg: '1.8rem'
-                    }}
-                    _hover={{
-                        boxShadow: '0 2px 20px -10px rgba(0,0,0,0.75)'
-                    }}
-                >
-                    <FiChevronRight />
-                </Link>
-            </Flex>
-
-            <Box
-                position={'absolute'}
-                bottom={'-0.5rem'}
-                right={0}
-                mr={{
-                    base: 8,
-                    lg: 16,
-                    xl: 24
-                }}
-                background="linear-gradient(to left, #da4453, #89216b)"
-                px={{
-                    base: 4,
-                    lg: 8
-                }}
-                py={{
-                    base: 2,
-                    lg: 4
-                }}
-                borderRadius={{
-                    base: 'full'
-                }}
-                color={'white'}
-                boxShadow={'0 2px 30px -5px rgba(0,0,0,0.75)'}
-            >
-                <Text
-                    fontSize={{
-                        base: '.5rem',
-                        lg: '.8rem',
-                        xl: '1rem'
-                    }}
-                    fontWeight={'bold'}
+                    color={'gray.400'}
                 >
                     {project.duration}
                 </Text>
+                <Text
+                    fontSize={{
+                        base: 12,
+                        md: 16
+                    }}
+                    noOfLines={5}
+                >
+                    {project.description}
+                </Text>
+
+                <Flex mt={{
+                    base: 4,
+                    md: 6
+                }}>
+                    <Link
+                        href={project.link}
+                        isExternal
+                        backgroundColor={'white'}
+                        py={{
+                            base: 1
+                        }}
+                        px={{
+                            base: 4
+                        }}
+                        color={'black'}
+                        borderRadius={'full'}
+                        fontSize={{
+                            base: 10,
+                            lg: '14'
+                        }}
+                        fontWeight={'600'}
+                        _hover={{
+                            boxShadow: '0 2px 20px -10px rgba(0,0,0,0.95)',
+                            color: '#da4453'
+                        }}
+                        display={'flex'}
+                        alignItems={'center'}
+                        gap={1}
+                    >
+                        See Project
+                        <FiChevronRight />
+                    </Link>
+                </Flex>
             </Box>
         </Box>
     )
