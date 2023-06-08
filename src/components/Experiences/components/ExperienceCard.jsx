@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 
 const ExperienceCard = ({ experience }) => {
-    const isEvenId = experience.id % 2 === 0
+    const isEvenId = experience.id % 2 !== 0
     let borderWidthValue = isEvenId ? '15px 15px 15px 0' : '15px 0 15px 15px'
     let leftValue = isEvenId ? '-15px' : 'unset'
     let rightValue = isEvenId ? 'unset' : '-15px'
@@ -72,6 +72,7 @@ const ExperienceCard = ({ experience }) => {
                             base: 16,
                             md: 24
                         }}
+                        lineHeight={1.5}
                     >
                         {experience.title}
                     </Heading>
@@ -95,7 +96,8 @@ const ExperienceCard = ({ experience }) => {
                     </Text>
                     <Box
                         pl={{
-                            base: 2
+                            base: 2,
+                            md: 4
                         }}
                     >
                         <UnorderedList
