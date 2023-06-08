@@ -1,5 +1,55 @@
 const experiences = [
     {
+        id: 5,
+        title: 'Fullstack Developer',
+        company: 'Visionic Indonesia | Fulltime',
+        description: 'Be a part of the Visionic Indonesia team as a fullstack developer with developing a web-based application.',
+        date: {
+            start: 'Apr 2023',
+            end: 'Present'
+        },
+        activities: [
+            'Developing all pages POLINES Study website using wordpress.',
+            'Developing home, tentang, layout, berita, solusi, and dashboard pages for PT. Domba Mas Indonesia website using Laravel.',
+        ]
+    },
+    {
+        id: 4,
+        title: 'Fullstack Developer',
+        company: 'PT. Baracipta Esa Engineering | Certified Internship',
+        description: 'Creating a Stufast platform, which is a platform for learning media that provides courses and training.',
+        date: {
+            start: 'Aug 2022',
+            end: 'Dec 2022'
+        },
+        activities: [
+            'Developing the Stufast platform.',
+            'Developing homepages, course pages, and training pages.',
+            'Developing cart pages, checkout pages, and bundle pages.',
+            'Developing Search feature.',
+        ]
+    },
+    {
+        id: 3,
+        title: 'Frontend Engineering',
+        company: 'Ruangguru X Kampus Merdeka | Studi Independen',
+        description: 'Completed an independent frontend engineering study program at Ruangguru with an intermediate level.',
+        date: {
+            start: 'Feb 2022',
+            end: 'Jul 2022'
+        },
+        activities: [
+            'Learned about HTML, CSS, and JavaScript.',
+            'Learned about ReactJS.',
+            'Learned about Testing Library.',
+            'Learned about Git and GitHub.',
+            'Learned about Agile Software Development.',
+            'Learned about Scrum Framework.',
+            'Learned about Public Speaking.',
+            'Doing a final project.'
+        ]
+    },
+    {
         id: 2,
         title: 'Laboratory Assistant',
         company: 'Dian Nuswantoro University',
