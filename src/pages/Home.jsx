@@ -8,6 +8,7 @@ import { Box, Text, useToast } from '@chakra-ui/react'
 import ABOUT from '../constants/about'
 import { MdContentCopy } from 'react-icons/md'
 import Educations from '../components/Educations'
+import Experiences from '../components/Experiences'
 
 const Contact = () => {
     const toast = useToast()
@@ -81,6 +82,7 @@ const Home = () => {
             <Contact />
             <Hero />
             <Educations />
+            <Experiences />
             <KampusMerdeka />
             <LatestProjects />
             <MoreAbout />
