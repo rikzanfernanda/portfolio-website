@@ -65,6 +65,7 @@ const EducationCard = ({ item }) => {
                         md: '.9rem',
                         lg: '1.25rem'
                     }}
+                    fontWeight={'500'}
                 >
                     {item.description}
                 </Text>
