@@ -18,7 +18,8 @@ const experiences = [
         id: 5,
         title: 'ICStar Hackathon 2022',
         company: 'By PT Orbit Nasional Edukasi',
-        description: 'Became a team leader and brought the team to the final and presented in front of the judges and all hackathon participants.',
+        description:
+            'Became a team leader and brought the team to the final and presented in front of the judges and all hackathon participants.',
         date: {
             start: 'Sep 2022',
             end: 'Dec 2022'
