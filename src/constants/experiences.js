@@ -1,6 +1,6 @@
 const experiences = [
     {
-        id: 5,
+        id: 6,
         title: 'Fullstack Developer',
         company: 'Visionic Indonesia | Fulltime',
         description:
@@ -12,6 +12,24 @@ const experiences = [
         activities: [
             'Developing all pages POLINES Study website using wordpress.',
             'Developing home, tentang, layout, berita, solusi, and dashboard pages for PT. Domba Mas Indonesia website using Laravel.'
+        ]
+    },
+    {
+        id: 5,
+        title: 'ICStar Hackathon 2022',
+        company: 'By PT Orbit Nasional Edukasi',
+        description: 'Became a team leader and brought the team to the final and presented in front of the judges and all hackathon participants.',
+        date: {
+            start: 'Sep 2022',
+            end: 'Dec 2022'
+        },
+        activities: [
+            'Learned about UIPath',
+            'Learned about RPA',
+            'Learned about Machine Learning',
+            'Learned about Automation',
+            'Doing a final project.',
+            'Presenting in front of the judges and all hackathon participants.'
         ]
     },
     {

@@ -36,7 +36,7 @@ const Experiences = () => {
                         md: 10
                     }}
                 >
-                    Experiences
+                    Career Timeline
                 </Heading>
 
                 <Box>
@@ -44,7 +44,7 @@ const Experiences = () => {
                         return (
                             <Flex key={i} mb={'10px'}>
                                 {/* Desktop view(left card) */}
-                                {isDesktop && i % 2 === 0 && (
+                                {isDesktop && i % 2 !== 0 && (
                                     <>
                                         <EmptyCard />
                                         <LineWithDot />
@@ -65,7 +65,7 @@ const Experiences = () => {
                                 )}
 
                                 {/* Desktop view(right card) */}
-                                {isDesktop && i % 2 !== 0 && (
+                                {isDesktop && i % 2 === 0 && (
                                     <>
                                         <ExperienceCard
                                             experience={experience}
