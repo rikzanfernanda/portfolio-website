@@ -16,7 +16,7 @@ const Educations = () => {
             <Container maxW={'container.xl'}>
                 <Heading
                     fontSize={{
-                        base: '1rem',
+                        base: '1.25rem',
                         md: '2rem'
                     }}
                     textAlign={{

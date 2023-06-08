@@ -2,7 +2,6 @@ import React from 'react'
 import MoreAbout from '../components/MoreAbout'
 import Porfolios from '../components/Porfolios'
 import Hero from '../components/Hero'
-import KampusMerdeka from '../components/KampusMerdeka'
 import LatestProjects from '../components/LatestProjects'
 import { Box, Text, useToast } from '@chakra-ui/react'
 import ABOUT from '../constants/about'
@@ -83,7 +82,6 @@ const Home = () => {
             <Hero />
             <Educations />
             <Experiences />
-            <KampusMerdeka />
             <LatestProjects />
             <MoreAbout />
             <Porfolios />
