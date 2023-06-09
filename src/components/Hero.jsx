@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 import React from 'react'
 import ABOUT from '../constants/about'
-import { FaLinkedin, FaGithub, FaGitlab } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaGitlab, FaPaintBrush, FaBehance } from 'react-icons/fa'
 
 const LinkButton = ({ href, icon, children }) => {
     return (
@@ -40,7 +40,7 @@ const Hero = () => {
     return (
         <Box
             bgColor={'blackAlpha.50'}
-            h={'100vh'}
+            minH={'100vh'}
             background="linear-gradient(360deg, #16222a, #3a6073)"
             bgPos={'center'}
             bgAttachment={'fixed'}
@@ -53,9 +53,6 @@ const Hero = () => {
             }}
             color={'white'}
             flexDirection={'column'}
-            pb={{
-                md: 28
-            }}
         >
             <Container maxW={'container.xl'}>
                 <Grid
@@ -66,6 +63,10 @@ const Hero = () => {
                     gap={{
                         base: 8,
                         md: 20
+                    }}
+                    py={10}
+                    pb={{
+                        base: 20,
                     }}
                 >
                     <GridItem
@@ -180,6 +181,24 @@ const Hero = () => {
                                 icon={<FaGitlab />}
                             >
                                 Gitlab
+                            </LinkButton>
+                            <LinkButton
+                                href={ABOUT.links.shutterstock}
+                                icon={<FaPaintBrush />}
+                            >
+                                Shutterstock
+                            </LinkButton>
+                            <LinkButton
+                                href={ABOUT.links.adobe_stock}
+                                icon={<FaPaintBrush />}
+                            >
+                                Adobe Stock
+                            </LinkButton>
+                            <LinkButton
+                                href={ABOUT.links.behance}
+                                icon={<FaBehance />}
+                            >
+                                Behance
                             </LinkButton>
                         </SimpleGrid>
                     </GridItem>

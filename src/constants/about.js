@@ -10,7 +10,10 @@ const ABOUT = {
     links: {
         linkedin: 'https://www.linkedin.com/in/rikzan-fernanda-9097831ab/',
         github: 'https://github.com/rikzanfernanda',
-        gitlab: 'https://gitlab.com/rikzanfernanda'
+        gitlab: 'https://gitlab.com/rikzanfernanda',
+        shutterstock: 'https://www.shutterstock.com/g/rikzan+fernanda',
+        behance: 'https://www.behance.net/rikzan_fernanda/projects',
+        adobe_stock: 'https://stock.adobe.com/contributor/208855852/rikzan-fernanda?load_type=author'
     },
     contact: {
         email: 'rikzanfernanda@gmail.com'
