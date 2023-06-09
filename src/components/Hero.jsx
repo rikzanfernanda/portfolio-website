@@ -1,6 +1,40 @@
-import { Box, Container, Image, Text } from '@chakra-ui/react'
+import {
+    Box,
+    Button,
+    Container,
+    Grid,
+    GridItem,
+    Image,
+    Link,
+    SimpleGrid,
+    Text
+} from '@chakra-ui/react'
 import React from 'react'
 import ABOUT from '../constants/about'
+import { FaLinkedin, FaGithub, FaGitlab } from 'react-icons/fa'
+
+const LinkButton = ({ href, icon, children }) => {
+    return (
+        <Link
+            href={href}
+            isExternal
+            width={{
+                base: 'auto',
+                md: '100%'
+            }}
+        >
+            <Button
+                variant={'solid'}
+                colorScheme="gray"
+                color={'black'}
+                leftIcon={icon}
+                width={'100%'}
+            >
+                {children}
+            </Button>
+        </Link>
+    )
+}
 
 const Hero = () => {
     return (
@@ -24,77 +58,132 @@ const Hero = () => {
             }}
         >
             <Container maxW={'container.xl'}>
-                <Box>
-                    <Image
-                        src={ABOUT.profile}
-                        alt={'profile'}
-                        borderRadius={'full'}
-                        boxSize={{
-                            base: 100,
-                            md: 150,
-                            lg: 200
-                        }}
-                        mb={{
-                            base: 4
-                        }}
-                        bgSize={'cover'}
-                        objectFit={'cover'}
-                        mx={{
-                            base: 'auto',
-                            md: '0'
-                        }}
-                    />
-                </Box>
-                <Box
-                    textAlign={{
-                        base: 'center',
-                        md: 'left'
+                <Grid
+                    templateColumns={{
+                        base: 'repeat(1, 1fr)',
+                        md: 'repeat(4, 1fr)'
                     }}
-                    mb={{
+                    gap={{
                         base: 8,
-                        md: 12,
-                        lg: 14
+                        md: 20
                     }}
                 >
-                    <Text
-                        fontSize={{
-                            base: '3xl',
-                            md: '6xl',
-                            lg: '7xl'
-                        }}
-                        fontWeight={'bold'}
-                    >
-                        {ABOUT.name}
-                    </Text>
-                    <Text
-                        fontSize={{
-                            base: 'md',
-                            md: '1rem',
-                            lg: '1rem',
-                            xl: '1.25rem'
+                    <GridItem
+                        colSpan={{
+                            base: 1,
+                            md: 3
                         }}
                     >
-                        {ABOUT.note}
-                    </Text>
-                </Box>
-                <Box
-                    textAlign={{
-                        base: 'center',
-                        md: 'left'
-                    }}
-                >
-                    <Text
-                        fontSize={{
-                            base: 'md',
-                            md: '1rem',
-                            lg: '1rem',
-                            xl: '1.25rem'
+                        <Box>
+                            <Image
+                                src={ABOUT.profile}
+                                alt={'profile'}
+                                borderRadius={'full'}
+                                boxSize={{
+                                    base: 100,
+                                    md: 150,
+                                    lg: 200
+                                }}
+                                mb={{
+                                    base: 4
+                                }}
+                                bgSize={'cover'}
+                                objectFit={'cover'}
+                                mx={{
+                                    base: 'auto',
+                                    md: '0'
+                                }}
+                            />
+                        </Box>
+                        <Box
+                            textAlign={{
+                                base: 'center',
+                                md: 'left'
+                            }}
+                            mb={{
+                                base: 8,
+                                md: 12,
+                                lg: 14
+                            }}
+                        >
+                            <Text
+                                fontSize={{
+                                    base: '3xl',
+                                    md: '6xl',
+                                    lg: '7xl'
+                                }}
+                                fontWeight={'bold'}
+                            >
+                                {ABOUT.name}
+                            </Text>
+                            <Text
+                                fontSize={{
+                                    base: 'md',
+                                    md: '1rem',
+                                    lg: '1rem',
+                                    xl: '1.25rem'
+                                }}
+                            >
+                                {ABOUT.note}
+                            </Text>
+                        </Box>
+                        <Box
+                            textAlign={{
+                                base: 'center',
+                                md: 'left'
+                            }}
+                        >
+                            <Text
+                                fontSize={{
+                                    base: 'md',
+                                    md: '1rem',
+                                    lg: '1rem',
+                                    xl: '1.25rem'
+                                }}
+                                fontWeight={'500'}
+                            >
+                                {ABOUT.summary}
+                            </Text>
+                        </Box>
+                    </GridItem>
+
+                    <GridItem
+                        colSpan={1}
+                        display={{
+                            md: 'flex'
                         }}
-                        fontWeight={'500'}
+                        alignItems={'center'}
+                        px={{
+                            base: 10,
+                            md: 0
+                        }}
                     >
-                        {ABOUT.summary}
-                    </Text>
-                </Box>
+                        <SimpleGrid
+                            columns={1}
+                            gap={3}
+                            width={'100%'}
+                        >
+                            <LinkButton
+                                href={ABOUT.links.linkedin}
+                                icon={<FaLinkedin />}
+                            >
+                                LinkedIn
+                            </LinkButton>
+                            <LinkButton
+                                href={ABOUT.links.github}
+                                icon={<FaGithub />}
+                            >
+                                Github
+                            </LinkButton>
+                            <LinkButton
+                                href={ABOUT.links.gitlab}
+                                icon={<FaGitlab />}
+                            >
+                                Gitlab
+                            </LinkButton>
+                        </SimpleGrid>
+                    </GridItem>
+                </Grid>
             </Container>
         </Box>
     )
