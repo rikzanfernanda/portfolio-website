@@ -11,7 +11,13 @@ import {
 } from '@chakra-ui/react'
 import React from 'react'
 import ABOUT from '../constants/about'
-import { FaLinkedin, FaGithub, FaGitlab, FaPaintBrush, FaBehance } from 'react-icons/fa'
+import {
+    FaLinkedin,
+    FaGithub,
+    FaGitlab,
+    FaPaintBrush,
+    FaBehance
+} from 'react-icons/fa'
 
 const LinkButton = ({ href, icon, children }) => {
     return (
@@ -66,7 +72,7 @@ const Hero = () => {
                     }}
                     py={10}
                     pb={{
-                        base: 20,
+                        base: 20
                     }}
                 >
                     <GridItem
@@ -159,11 +165,7 @@ const Hero = () => {
                             md: 0
                         }}
                     >
-                        <SimpleGrid
-                            columns={1}
-                            gap={3}
-                            width={'100%'}
-                        >
+                        <SimpleGrid columns={1} gap={3} width={'100%'}>
                             <LinkButton
                                 href={ABOUT.links.linkedin}
                                 icon={<FaLinkedin />}

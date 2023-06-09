@@ -13,7 +13,8 @@ const ABOUT = {
         gitlab: 'https://gitlab.com/rikzanfernanda',
         shutterstock: 'https://www.shutterstock.com/g/rikzan+fernanda',
         behance: 'https://www.behance.net/rikzan_fernanda/projects',
-        adobe_stock: 'https://stock.adobe.com/contributor/208855852/rikzan-fernanda?load_type=author'
+        adobe_stock:
+            'https://stock.adobe.com/contributor/208855852/rikzan-fernanda?load_type=author'
     },
     contact: {
         email: 'rikzanfernanda@gmail.com'
