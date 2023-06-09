@@ -17,7 +17,7 @@ const Contact = () => {
             position={'fixed'}
             bottom={{
                 base: 4,
-                lg: 6
+                lg: 12
             }}
             width={'100%'}
             display={'flex'}
@@ -30,6 +30,10 @@ const Contact = () => {
             px={{
                 base: 3,
                 lg: '2rem'
+            }}
+            opacity={0.65}
+            _hover={{
+                opacity: 1
             }}
         >
             <Box
