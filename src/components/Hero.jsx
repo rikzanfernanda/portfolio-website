@@ -16,7 +16,8 @@ import {
     FaGithub,
     FaGitlab,
     FaPaintBrush,
-    FaBehance
+    FaBehance,
+    FaDollarSign
 } from 'react-icons/fa'
 
 const LinkButton = ({ href, icon, children }) => {
@@ -201,6 +202,18 @@ const Hero = () => {
                                 icon={<FaBehance />}
                             >
                                 Behance
+                            </LinkButton>
+                            <LinkButton
+                                href={ABOUT.links.upwork}
+                                icon={<FaDollarSign />}
+                            >
+                                Upwork
+                            </LinkButton>
+                            <LinkButton
+                                href={ABOUT.links.projects_co_id}
+                                icon={<FaDollarSign />}
+                            >
+                                Projects.co.id
                             </LinkButton>
                         </SimpleGrid>
                     </GridItem>
