@@ -1,5 +1,3 @@
-import React from 'react'
-import MoreAbout from '../components/MoreAbout'
 import Porfolios from '../components/Porfolios'
 import Hero from '../components/Hero'
 import LatestProjects from '../components/LatestProjects'
@@ -87,7 +85,6 @@ const Home = () => {
             <Educations />
             <Experiences />
             <LatestProjects />
-            <MoreAbout />
             <Porfolios />
         </>
     )
