@@ -2,7 +2,13 @@ import profile from '../assets/images/profile.jpg'
 
 const ABOUT = {
     name: 'Rikzan Fernanda',
-    note: 'Web Developer | Laravel, Codeigniter, Express | React/NextJS',
+    skills: [
+        'Web Developer',
+        'Laravel',
+        'Codeigniter',
+        'ExpressJS',
+        'React/NextJS'
+    ],
     profile: profile,
     title: 'Who am I?',
     summary:

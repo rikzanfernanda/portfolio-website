@@ -19,6 +19,7 @@ import {
     FaBehance,
     FaDollarSign
 } from 'react-icons/fa'
+import { TypeAnimation } from 'react-type-animation'
 
 const LinkButton = ({ href, icon, children }) => {
     return (
@@ -132,7 +133,20 @@ const Hero = () => {
                                     xl: '1.25rem'
                                 }}
                             >
-                                {ABOUT.note}
+                                {ABOUT.skills[0]} |{' '}
+                                <TypeAnimation
+                                    sequence={[
+                                        ABOUT.skills[1],
+                                        1000,
+                                        ABOUT.skills[2],
+                                        1000,
+                                        ABOUT.skills[3],
+                                        1000,
+                                        ABOUT.skills[4],
+                                        1000
+                                    ]}
+                                    repeat={Infinity}
+                                />
                             </Text>
                         </Box>
                         <Box
