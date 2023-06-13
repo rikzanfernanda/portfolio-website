@@ -113,7 +113,7 @@ const Hero = () => {
                                     opacity: 1,
                                     y: 0,
                                     transition: {
-                                        duration: 2,
+                                        duration: 2
                                     }
                                 }}
                             >
@@ -165,7 +165,7 @@ const Hero = () => {
                                             opacity: 1,
                                             x: 0,
                                             transition: {
-                                                duration: 0.75,
+                                                duration: 0.75
                                             }
                                         }
                                     }}
@@ -211,12 +211,12 @@ const Hero = () => {
                             <Box
                                 as={motion.div}
                                 initial={{
-                                    opacity: 0,
+                                    opacity: 0
                                 }}
                                 animate={{
                                     opacity: 1,
                                     transition: {
-                                        duration: 2,
+                                        duration: 2
                                     }
                                 }}
                                 textAlign={{
