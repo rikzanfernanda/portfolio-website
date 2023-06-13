@@ -20,27 +20,46 @@ import {
     FaDollarSign
 } from 'react-icons/fa'
 import { TypeAnimation } from 'react-type-animation'
+import { AnimatePresence, motion } from 'framer-motion'
 
-const LinkButton = ({ href, icon, children }) => {
+const LinkButton = ({ href, icon, children, duration, delay }) => {
     return (
-        <Link
-            href={href}
-            isExternal
-            width={{
-                base: 'auto',
-                md: '100%'
-            }}
-        >
-            <Button
-                variant={'solid'}
-                colorScheme="gray"
-                color={'black'}
-                leftIcon={icon}
-                width={'100%'}
+        <AnimatePresence>
+            <Box
+                as={motion.div}
+                initial={{
+                    opacity: 0,
+                    y: -50
+                }}
+                animate={{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                        duration: duration,
+                        delay: delay
+                    }
+                }}
             >
-                {children}
-            </Button>
-        </Link>
+                <Link
+                    href={href}
+                    isExternal
+                    width={{
+                        base: 'auto',
+                        md: '100%'
+                    }}
+                >
+                    <Button
+                        variant={'solid'}
+                        colorScheme="gray"
+                        color={'black'}
+                        leftIcon={icon}
+                        width={'100%'}
+                    >
+                        {children}
+                    </Button>
+                </Link>
+            </Box>
+        </AnimatePresence>
     )
 }
 
@@ -83,27 +102,43 @@ const Hero = () => {
                             md: 3
                         }}
                     >
-                        <Box>
-                            <Image
-                                src={ABOUT.profile}
-                                alt={'profile'}
-                                borderRadius={'full'}
-                                boxSize={{
-                                    base: 100,
-                                    md: 150,
-                                    lg: 200
+                        <AnimatePresence>
+                            <Box
+                                as={motion.div}
+                                initial={{
+                                    opacity: 0,
+                                    y: 60
                                 }}
-                                mb={{
-                                    base: 4
+                                animate={{
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        duration: 2,
+                                    }
                                 }}
-                                bgSize={'cover'}
-                                objectFit={'cover'}
-                                mx={{
-                                    base: 'auto',
-                                    md: '0'
-                                }}
-                            />
-                        </Box>
+                            >
+                                <Image
+                                    src={ABOUT.profile}
+                                    alt={'profile'}
+                                    borderRadius={'full'}
+                                    boxSize={{
+                                        base: 100,
+                                        md: 150,
+                                        lg: 200
+                                    }}
+                                    mb={{
+                                        base: 4
+                                    }}
+                                    bgSize={'cover'}
+                                    objectFit={'cover'}
+                                    mx={{
+                                        base: 'auto',
+                                        md: '0'
+                                    }}
+                                />
+                            </Box>
+                        </AnimatePresence>
+
                         <Box
                             textAlign={{
                                 base: 'center',
@@ -115,16 +150,38 @@ const Hero = () => {
                                 lg: 14
                             }}
                         >
-                            <Text
-                                fontSize={{
-                                    base: '3xl',
-                                    md: '6xl',
-                                    lg: '7xl'
-                                }}
-                                fontWeight={'bold'}
-                            >
-                                {ABOUT.name}
-                            </Text>
+                            <AnimatePresence>
+                                <Box
+                                    as={motion.div}
+                                    initial="hidden"
+                                    animate="visible"
+                                    exit="hidden"
+                                    variants={{
+                                        hidden: {
+                                            opacity: 0,
+                                            x: -500
+                                        },
+                                        visible: {
+                                            opacity: 1,
+                                            x: 0,
+                                            transition: {
+                                                duration: 0.75,
+                                            }
+                                        }
+                                    }}
+                                >
+                                    <Text
+                                        fontSize={{
+                                            base: '3xl',
+                                            md: '6xl',
+                                            lg: '7xl'
+                                        }}
+                                        fontWeight={'bold'}
+                                    >
+                                        {ABOUT.name}
+                                    </Text>
+                                </Box>
+                            </AnimatePresence>
                             <Text
                                 fontSize={{
                                     base: 'md',
@@ -149,24 +206,37 @@ const Hero = () => {
                                 />
                             </Text>
                         </Box>
-                        <Box
-                            textAlign={{
-                                base: 'center',
-                                md: 'left'
-                            }}
-                        >
-                            <Text
-                                fontSize={{
-                                    base: 'md',
-                                    md: '1rem',
-                                    lg: '1rem',
-                                    xl: '1.25rem'
+
+                        <AnimatePresence>
+                            <Box
+                                as={motion.div}
+                                initial={{
+                                    opacity: 0,
                                 }}
-                                fontWeight={'500'}
+                                animate={{
+                                    opacity: 1,
+                                    transition: {
+                                        duration: 2,
+                                    }
+                                }}
+                                textAlign={{
+                                    base: 'center',
+                                    md: 'left'
+                                }}
                             >
-                                {ABOUT.summary}
-                            </Text>
-                        </Box>
+                                <Text
+                                    fontSize={{
+                                        base: 'md',
+                                        md: '1rem',
+                                        lg: '1rem',
+                                        xl: '1.25rem'
+                                    }}
+                                    fontWeight={'500'}
+                                >
+                                    {ABOUT.summary}
+                                </Text>
+                            </Box>
+                        </AnimatePresence>
                     </GridItem>
 
                     <GridItem
@@ -184,48 +254,64 @@ const Hero = () => {
                             <LinkButton
                                 href={ABOUT.links.linkedin}
                                 icon={<FaLinkedin />}
+                                delay={0}
+                                duration={1}
                             >
                                 LinkedIn
                             </LinkButton>
                             <LinkButton
                                 href={ABOUT.links.github}
                                 icon={<FaGithub />}
+                                delay={0.25}
+                                duration={1}
                             >
                                 Github
                             </LinkButton>
                             <LinkButton
                                 href={ABOUT.links.gitlab}
                                 icon={<FaGitlab />}
+                                delay={0.5}
+                                duration={1}
                             >
                                 Gitlab
                             </LinkButton>
                             <LinkButton
                                 href={ABOUT.links.shutterstock}
                                 icon={<FaPaintBrush />}
+                                delay={0.75}
+                                duration={1}
                             >
                                 Shutterstock
                             </LinkButton>
                             <LinkButton
                                 href={ABOUT.links.adobe_stock}
                                 icon={<FaPaintBrush />}
+                                delay={1}
+                                duration={1}
                             >
                                 Adobe Stock
                             </LinkButton>
                             <LinkButton
                                 href={ABOUT.links.behance}
                                 icon={<FaBehance />}
+                                delay={1.25}
+                                duration={1}
                             >
                                 Behance
                             </LinkButton>
                             <LinkButton
                                 href={ABOUT.links.upwork}
                                 icon={<FaDollarSign />}
+                                delay={1.5}
+                                duration={1}
                             >
                                 Upwork
                             </LinkButton>
                             <LinkButton
                                 href={ABOUT.links.projects_co_id}
                                 icon={<FaDollarSign />}
+                                delay={1.75}
+                                duration={1}
                             >
                                 Projects.co.id
                             </LinkButton>
