@@ -1,11 +1,11 @@
 import Porfolios from '../components/Porfolios'
 import Hero from '../components/Hero'
-import LatestProjects from '../components/LatestProjects'
 import { Box, Text, useToast } from '@chakra-ui/react'
 import ABOUT from '../constants/about'
 import { MdContentCopy } from 'react-icons/md'
 import Educations from '../components/Educations'
 import Experiences from '../components/Experiences'
+import Portfolio from '../components/Portfolio'
 
 const Contact = () => {
     const toast = useToast()
@@ -84,7 +84,7 @@ const Home = () => {
             <Hero />
             <Educations />
             <Experiences />
-            <LatestProjects />
+            <Portfolio />
             <Porfolios />
         </>
     )
