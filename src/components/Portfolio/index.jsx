@@ -1,5 +1,16 @@
-import { Box, Container, Flex, Heading, Image, Link, ListItem, SimpleGrid, Text, UnorderedList } from "@chakra-ui/react"
-import LATEST_PROJECTS from "../../constants/latest-projects"
+import {
+    Box,
+    Container,
+    Flex,
+    Heading,
+    Image,
+    Link,
+    ListItem,
+    SimpleGrid,
+    Text,
+    UnorderedList
+} from '@chakra-ui/react'
+import LATEST_PROJECTS from '../../constants/latest-projects'
 import { FiChevronRight } from 'react-icons/fi'
 
 const Portfolio = () => {
@@ -41,10 +52,7 @@ const Portfolio = () => {
                 >
                     {LATEST_PROJECTS.data.map((project, i) => {
                         return (
-                            <Box
-                                key={i}
-                                color={'white'}
-                            >
+                            <Box key={i} color={'white'}>
                                 <Image
                                     src={project.image}
                                     w={{
@@ -110,7 +118,8 @@ const Portfolio = () => {
                                             }}
                                             fontWeight={'600'}
                                             _hover={{
-                                                boxShadow: '0 2px 20px -10px rgba(0,0,0,0.95)',
+                                                boxShadow:
+                                                    '0 2px 20px -10px rgba(0,0,0,0.95)',
                                                 color: '#da4453'
                                             }}
                                             display={'flex'}
@@ -141,13 +150,11 @@ const Portfolio = () => {
                                         fontWeight={'500'}
                                         pl={4}
                                     >
-                                        {project.jobs.map(
-                                            (job, i) => (
-                                                <ListItem key={i}>
-                                                    ✅ {job}
-                                                </ListItem>
-                                            )
-                                        )}
+                                        {project.jobs.map((job, i) => (
+                                            <ListItem key={i}>
+                                                ✅ {job}
+                                            </ListItem>
+                                        ))}
                                     </UnorderedList>
                                 </Box>
                             </Box>

@@ -72,7 +72,7 @@ const LATEST_PROJECTS = {
                 'Set up layout',
                 'Create home page, courses, bundling, training, cart, etc.',
                 'Create notification system',
-                'Create search system',
+                'Create search system'
             ]
         },
         {
@@ -82,9 +82,7 @@ const LATEST_PROJECTS = {
             description:
                 'Belanja Happy is the E-Commerce site. The project is the final project of Sanbercode Next JS bootcamp. The app is built with next js and tailwind css, and also the view is responsive.',
             image: Behappy,
-            jobs: [
-                'Create all pages using next js',
-            ]
+            jobs: ['Create all pages using next js']
         }
     ]
 }

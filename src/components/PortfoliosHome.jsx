@@ -17,7 +17,7 @@ const PortfoliosHome = ({ portfolio, link }) => {
                     colorScheme={'blue'}
                     size={['xs', 'md']}
                 >
-                    Show
+                    Show Project
                 </Button>
             </Link>
         </Box>
