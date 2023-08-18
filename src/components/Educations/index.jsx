@@ -1,4 +1,13 @@
-import { Box, Container, Heading, Image, ListItem, SimpleGrid, Text, UnorderedList } from '@chakra-ui/react'
+import {
+    Box,
+    Container,
+    Heading,
+    Image,
+    ListItem,
+    SimpleGrid,
+    Text,
+    UnorderedList
+} from '@chakra-ui/react'
 import React from 'react'
 import education from '../../constants/education'
 import BgEducation from '../../assets/images/bg-education.jpg'
@@ -40,10 +49,7 @@ const Educations = () => {
                         {education.data.map((item, i) => {
                             return (
                                 <Box key={i}>
-                                    <Box
-                                        mb={6}
-                                        color={'white'}
-                                    >
+                                    <Box mb={6} color={'white'}>
                                         <Heading
                                             fontSize={{
                                                 base: '1rem',
@@ -61,7 +67,8 @@ const Educations = () => {
                                                 lg: '1rem'
                                             }}
                                         >
-                                            {item.study} | {item.date.start} - {item.date.end}
+                                            {item.study} | {item.date.start} -{' '}
+                                            {item.date.end}
                                         </Text>
                                     </Box>
                                     <Box>
@@ -73,9 +80,13 @@ const Educations = () => {
                                             color={'white'}
                                             fontWeight={'500'}
                                         >
-                                            {item.activities.map((activity, i) => (
-                                                <ListItem key={i}>{activity}</ListItem>
-                                            ))}
+                                            {item.activities.map(
+                                                (activity, i) => (
+                                                    <ListItem key={i}>
+                                                        {activity}
+                                                    </ListItem>
+                                                )
+                                            )}
                                         </UnorderedList>
                                     </Box>
                                 </Box>
@@ -85,7 +96,7 @@ const Educations = () => {
 
                     <Box
                         w={{
-                            base: 'auto',
+                            base: 'auto'
                         }}
                         h={{
                             base: 350

@@ -7,11 +7,12 @@ const experiences = [
             'Be a part of the Visionic Indonesia team as a fullstack developer with developing a web-based application.',
         date: {
             start: 'Apr 2023',
-            end: 'Present'
+            end: 'Jul 2023'
         },
         activities: [
-            'Developing all pages POLINES Study website using wordpress.',
-            'Developing home, tentang, layout, berita, solusi, and dashboard pages for PT. Domba Mas Indonesia website using Laravel.'
+            'I have successfully configured themes for 6 websites for Politeknik Negeri Semarang.',
+            'Set up the project website for PT Domba Mas Indonesia, and created multiple pages based on Figma design, including home, solusi, store locator, katalog produk, login, register, and several dashboard pages.',
+            'I have also made several migrations and models, such as user, city, karyawan, gaji, etc., and developed a password reset feature for the HRIS System PT CDS Asia Electronics.'
         ]
     },
     {

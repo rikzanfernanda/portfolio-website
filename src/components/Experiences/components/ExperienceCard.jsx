@@ -51,17 +51,17 @@ const ExperienceCard = ({ experience }) => {
             <Box>
                 <Text
                     fontSize={{
-                        base: 14,
-                        md: 16
+                        base: '.85rem',
+                        md: '1rem'
                     }}
                     color="#da4453"
-                    mb={1}
+                    mb={0}
                 >
                     {experience.date.start} - {experience.date.end}
                 </Text>
 
                 <VStack
-                    spacing={2}
+                    spacing={1}
                     mb={3}
                     textAlign="left"
                     alignItems={'flex-start'}
