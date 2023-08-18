@@ -4,7 +4,6 @@ const education = {
         {
             nama: 'Dian Nuswantoro University',
             study: 'Bachelor of Computer Science',
-            gpa: '3.74',
             description:
                 'Activities and societies: Focus on computer science, create web and mobile applications, become a laboratory assistant, and administrator of the Dian Nuswantoro Club.',
             date: {
@@ -12,6 +11,7 @@ const education = {
                 end: '2023'
             },
             activities: [
+                'GPA 3.74',
                 'Completed web training through Dian Nuswantoro Computer CLub',
                 'Became a laboratory assistant for the programming class at Dian Nuswantoro Programming Laboratory',
                 'Became an Activity Manager at Dian Nuswantoro Computer Club (DNCC) for the 2020-2021 period',
